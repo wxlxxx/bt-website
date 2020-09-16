@@ -1,0 +1,43 @@
+[data-page="home"] {
+  .banner {
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 768px;
+    h1 {
+      @media(min-width: 992px) {
+        font-size: 80px;
+      }
+    }
+  }
+  .img-box {
+    height: 160px;
+    overflow: hidden;
+    @media(min-width: 992px) {
+      height: 300px;
+    }
+  }
+  .box-shadow {
+    box-shadow: 0px 0px 35px rgba(35, 24, 82, 0.15);
+  }
+  .login-section {
+    & > div {
+      height: 180px;
+      @media(min-width: 992px) {
+        height: 300px;
+      }
+    }
+  }
+  .login-wrap {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    @media(min-width: 992px) {
+      top: 100px;
+    }
+  }
+}

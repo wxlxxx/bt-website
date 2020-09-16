@@ -16,3 +16,88 @@
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/utilities";
+
+.wf-active body {
+  font-family: 'Noto Sans JP';
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .dropdown:not(:last-child) {
+    padding-right: 1rem;
+  }
+  .dropdown-toggle {
+    position: relative;
+  }
+  .dropdown-toggle::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-image: url('data:image/svg+xml,<svg width="12px" height="12px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="rgba(255,255,255,1)" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-6px);
+  }
+  .nav-link {
+    svg {
+      vertical-align: middle;
+    }
+  }
+}
+
+.text-huge {
+  @media(min-width: 992px){
+    font-size: 64px;
+  }
+}
+
+.custom-link {
+  position: relative;
+  &:hover {
+    &::after {
+      transform: translate(1rem, -0.5rem);
+    }
+  }
+  &::after {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    background-image: url('data:image/svg+xml,<svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="rgba(222,85,255,1)" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>');
+    top: 50%;
+    right: -1.5rem;
+    transform: translateY(-0.5rem);
+    transition: all 0.2s;
+  }
+}
+
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-lg {
+  @media(min-width: 992px){
+    max-width: 1200px;
+  }
+}

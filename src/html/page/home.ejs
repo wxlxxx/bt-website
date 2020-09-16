@@ -2,12 +2,203 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
   </head>
-  <body>
+  <body data-page="home">
     <%= require('html-loader!../common/header.ejs') %>
     <main>
-
+      <section class="banner text-center d-flex align-items-center text-white">
+        <div class="container">
+          <img src="<%= process.env.IMAGE_PATH %>/images/home/banner-pic1.svg" alt="">
+          <h1 class="my-4">より快適な現代生活を支える</h1>
+          <div class="pt-5">
+            <a href="" class="text-secondary align-middle">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="bi bi-play-fill border border-white rounded-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+              </svg>
+              <span class="ml-2">動画を再生します</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bg-light pb-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <img src="<%= process.env.IMAGE_PATH %>/images/home/pic1.png" alt="">
+            </div>
+            <div class="col-lg-5 pt-4 pt-lg-0">
+              <h2 class="text-primary mb-4 h1">Bluettiの大容量エネルギー蓄電池とは何ですか？</h2>
+              <p class="mb-5 text-muted">BLUETTI(ブルーティ)はJAPANの公式サイト。新エネルギー分野、特にリチウムイオン電池の製品開発における世界のトップ企業です。 商用・家用の大容量ポータブル電源をはじめ、太陽光発電機器や車中泊 、キャンプ、お釣りなどのアウトドア用品などの企画生産・販売を行っております。</p>
+              <a href="#" class="btn btn-secondary">詳細を見る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary text-white" style="background-image: url('<%= process.env.IMAGE_PATH %>/images/home/bg-1.svg');background-position: right;background-size: auto 100%;background-repeat: no-repeat;">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-5 py-lg-5 pr-lg-5 py-3">
+              <h2 class="h1 mb-4">Bluettiの大容量バッテリーのアプリケーションシナリオ</h2>
+              <p>BLUETTI(ブルーティ)はJAPANの公式サイト。新エネルギー分野、特にリチウムイオン電池の製品開発における世界のトップ企業です。</p>
+              <p class="mb-5">商用・家用の大容量ポータブル電源をはじめ、太陽光発電機器や車中泊 、キャンプ、お釣りなどのアウトドア用品などの企画生産・販売を行っております</p>
+              <a href="#" class="btn btn-secondary">詳細を見る</a>
+            </div>
+            <div class="col-lg-7 py-3">
+              <img src="<%= process.env.IMAGE_PATH %>/images/home/pic2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5" style="background-image: url('<%= process.env.IMAGE_PATH %>/images/home/bg-2.jpg');background-position: center;background-size: cover;height: 100vh;max-height: 768px;">
+        <div class="container py-lg-4">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+              <h2 class="mb-4 text-primary text-huge">ブランドビジョン</h2>
+              <p class="text-muted">BLUETTI(ブルーティ)はJAPANの公式サイト。新エネルギー分野、特にリチウムイオン電池の製品開発における世界のトップ企業です。</p>
+              <p class="text-muted">商用・家用の大容量ポータブル電源をはじめ、太陽光発電機器や車中泊 、キャンプ、お釣りなどのアウトドア用品などの企画生産・販売を行っております。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container py-lg-4">
+          <div class="py-4 text-center text-primary mb-5" style="background-image: url('<%= process.env.IMAGE_PATH %>/images/home/logo-text.svg');background-size: contain;background-repeat: no-repeat;background-position: center;">
+            <h2 class="text-huge">ニュース</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 py-3">
+              <div class="box-shadow h-100">
+                <div class="img-box">
+                  <img src="<%= process.env.IMAGE_PATH %>/images/home/pic3.jpg" alt="">
+                </div>
+                <div class="p-4 bg-white">
+                  <h4 class="text-primary mb-4">キャンピングカー全体をソーラーから離す最も簡単な方法</h4>
+                  <p class="text-muted mb-4">太陽光発電所は最近十数セントですが、この小さなパッケージでこの強力なスペックを誇ることはめったにありません！</p>
+                  <a href="#" class="custom-link text-secondary">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="box-shadow h-100">
+                <div class="img-box">
+                  <img src="<%= process.env.IMAGE_PATH %>/images/home/pic4.jpg" alt="">
+                </div>
+                <div class="p-4 bg-white">
+                  <h4 class="text-primary mb-4">キャンピングカー全体をソーラーから離す最も簡単な方法</h4>
+                  <p class="text-muted mb-4">太陽光発電所は最近十数セントですが、この小さなパッケージでこの強力なスペックを誇ることはめったにありません！</p>
+                  <a href="#" class="custom-link text-secondary">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="box-shadow h-100">
+                <div class="img-box">
+                  <img src="<%= process.env.IMAGE_PATH %>/images/home/pic5.jpg" alt="">
+                </div>
+                <div class="p-4 bg-white">
+                  <h4 class="text-primary mb-4">キャンピングカー全体をソーラーから離す最も簡単な方法</h4>
+                  <p class="text-muted mb-4">太陽光発電所は最近十数セントですが、この小さなパッケージでこの強力なスペックを誇ることはめったにありません！</p>
+                  <a href="#" class="custom-link text-secondary">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="login-section">
+        <div>
+          <div class="container position-relative">
+            <div class="login-wrap bg-primary text-white py-5">
+              <div class="container-lg">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h2 class="text-huge mb-4">ユーザー登録</h2>
+                    <p class="mb-5">お買い上げいただきましたお客様へ充実したサポートをお届けするため、こちらからユーザー登録をお願いいたします。</p>
+                    <a href="#" class="btn btn-secondary">詳細を見る</a>
+                  </div>
+                  <div class="col-lg-6 d-none d-lg-block">
+                    <img class="absolute-center" src="<%= process.env.IMAGE_PATH %>/images/home/pic6.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light"></div>
+      </section>
+      <section class="py-5 bg-light text-center">
+        <div class="container py-lg-4">
+          <div class="py-4 text-center text-primary mb-5" style="background-image: url('<%= process.env.IMAGE_PATH %>/images/home/logo-text.svg');background-size: contain;background-repeat: no-repeat;background-position: center;">
+            <h2 class="text-huge">人気商品</h2>
+          </div>
+          <div class="row mb-5">
+            <div class="col-lg-4 py-3">
+              <div class="h-100">
+                <div class="img-box position-relative">
+                  <div class="bg-primary position-absolute w-100 h-50" style="left: 0;bottom:0;"></div>
+                  <img class="position-relative" style="height: 100%;" src="<%= process.env.IMAGE_PATH %>/images/home/pic7.png" alt="">
+                </div>
+                <div class="px-4 pb-5 bg-primary text-white">
+                  <h4 class="mb-4">Bluetti EB150</h4>
+                  <p class="mb-4">太陽光発電所は最近十数セントですが、この小さなパッケージでこの強力なスペックを誇ることはめったにありません！</p>
+                  <a href="#" class="custom-link text-secondary">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="h-100">
+                <div class="img-box position-relative">
+                  <div class="bg-primary position-absolute w-100 h-50" style="left: 0;bottom:0;"></div>
+                  <img class="position-relative" style="height: 100%;" src="<%= process.env.IMAGE_PATH %>/images/home/pic8.png" alt="">
+                </div>
+                <div class="px-4 pb-5 bg-primary text-white">
+                  <h4 class="mb-4">Bluetti EB150</h4>
+                  <p class="mb-4">太陽光発電所は最近十数セントですが、この小さなパッケージでこの強力なスペックを誇ることはめったにありません！</p>
+                  <a href="#" class="custom-link text-secondary">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="h-100">
+                <div class="img-box position-relative">
+                  <div class="bg-primary position-absolute w-100 h-50" style="left: 0;bottom:0;"></div>
+                  <img class="position-relative" style="height: 100%;" src="<%= process.env.IMAGE_PATH %>/images/home/pic8.png" alt="">
+                </div>
+                <div class="px-4 pb-5 bg-primary text-white">
+                  <h4 class="mb-4">Bluetti EB150</h4>
+                  <p class="mb-4">太陽光発電所は最近十数セントですが、この小さなパッケージでこの強力なスペックを誇ることはめったにありません！</p>
+                  <a href="#" class="custom-link text-secondary">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 py-3">
+              <div style="height: 120px">
+                <img src="<%= process.env.IMAGE_PATH %>/images/home/pic9.svg" alt="">
+              </div>
+              <h4 class="text-muted mb-4">カスタマーサポート</h4>
+              <p class="text-muted">製品サポートに関する質問がございましたらまでにご連絡ください。1年間の保証と30日間の返金保証。</p>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div style="height: 120px">
+                <img src="<%= process.env.IMAGE_PATH %>/images/home/pic10.svg" alt="">
+              </div>
+              <h4 class="text-muted mb-4">カスタマーサポート</h4>
+              <p class="text-muted">製品サポートに関する質問がございましたらまでにご連絡ください。1年間の保証と30日間の返金保証。</p>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div style="height: 120px">
+                <img src="<%= process.env.IMAGE_PATH %>/images/home/pic11.svg" alt="">
+              </div>
+              <h4 class="text-muted mb-4">カスタマーサポート</h4>
+              <p class="text-muted">製品サポートに関する質問がございましたらまでにご連絡ください。1年間の保証と30日間の返金保証。</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <%= require('html-loader!../common/footer.ejs') %>
   </body>

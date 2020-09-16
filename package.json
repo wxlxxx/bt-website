@@ -43,6 +43,7 @@
     "webpack-merge": "^5.1.4"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.2",
+    "webfontloader": "^1.6.28"
   }
 }

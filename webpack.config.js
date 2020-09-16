@@ -137,7 +137,7 @@ const devConfig = {
       chunkFilename: 'assets/async/[name].css',
     }),
     new webpack.DefinePlugin({
-      'process.env.IMAGE_PATH': JSON.stringify('/'),
+      'process.env.IMAGE_PATH': JSON.stringify(''),
       'process.env.PUBLIC_PATH': JSON.stringify('/')
     })
   ].concat(htmlPlugins)
