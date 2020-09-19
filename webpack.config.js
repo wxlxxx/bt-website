@@ -9,8 +9,9 @@ const ip = require('ip')
 const { merge } = require('webpack-merge')
 const portFinderSync = require('portfinder-sync')
 // site config
-const productionPublicPath = ''
-const productionImagePath = ''
+// test server path config
+const productionPublicPath = 'http://62.234.217.81/'
+const productionImagePath = 'http://62.234.217.81'
 
 function generateHtmlPlugins (templateDir) {
   // Read files in template directory

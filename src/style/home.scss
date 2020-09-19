@@ -1,3 +1,31 @@
+@import '~swiper/swiper-bundle.css';
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: linear-gradient(191.03deg, #74D9F6 15.22%, #DE55FF 76.06%);
+}
+.swiper-button-prev, .swiper-button-next {
+  top: 100%;
+  left: 50%;
+  margin-top: -32px;
+  width: 24px;
+  height: 24px;
+  z-index: 59;
+  &::after {
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.swiper-button-prev {
+  margin-left: -60px;
+}
+.swiper-button-next {
+  margin-left: 30px;
+}
+
 [data-page="home"] {
   .banner {
     background-image: url('./images/bg.jpg');
