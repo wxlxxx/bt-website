@@ -2,6 +2,7 @@ import Swiper from 'Swiper/swiper-bundle.js'
 import '../style/home.scss'
 
 const swiper = new Swiper('.swiper-container', {
+  effect: 'fade',
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

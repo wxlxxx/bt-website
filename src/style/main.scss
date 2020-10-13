@@ -9,8 +9,10 @@
 @import "~bootstrap/scss/tables";
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/input-group";
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/breadcrumb";
 @import "~bootstrap/scss/custom-forms";
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
@@ -34,6 +36,41 @@ img {
     }
   }
 }
+h6,
+.h6 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+.list-disc {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    position: relative;
+    padding-left: 1rem;
+    &:not(:last-child){
+      margin-bottom: 1rem;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: .6em;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background-color: $secondary;
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .container-sm {
+      max-width: 1200px;
+  }
+}
+
 header {
   position: absolute;
   top: 0;

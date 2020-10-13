@@ -12,6 +12,14 @@ if(document.querySelectorAll('[data-page="home"]').length > 0){
   import(/* webpackChunkName: "homepage" */ './homePage.js')
 }
 
+if(document.querySelectorAll('[data-page="company"]').length > 0){
+  import(/* webpackChunkName: "companypage" */ './companyPage.js')
+}
+
+if(document.querySelectorAll('[data-page="product"]').length > 0){
+  import(/* webpackChunkName: "productpage" */ './productPage.js')
+}
+
 document.querySelectorAll('[data-toggle="collapse"]').forEach((item, i) => {
   item.addEventListener('click', (e) => {
     const targetEle = document.querySelector(item.getAttribute('data-target'))
@@ -36,5 +44,26 @@ document.querySelectorAll('details').forEach((item) => {
     siblings(item.parentNode, '').forEach((ele) => {
       ele.children[0].removeAttribute('open')
     })
+  })
+})
+
+
+document.querySelectorAll('.nav-tabs .nav-link').forEach((item) => {
+  item.addEventListener('click', (e) => {
+    item.classList.add('active')
+    item.setAttribute('aria-selected', 'true')
+    siblings(item, '.nav-link').forEach((item2) => {
+      item2.classList.remove('active')
+      item2.setAttribute('aria-selected', 'false')
+    })
+    const target = document.querySelector(item.getAttribute('href'))
+    console.log(target);
+    target.classList.add('show')
+    target.classList.add('active')
+    siblings(target, '.tab-pane').forEach((item3) => {
+      item3.classList.remove('show')
+      item3.classList.remove('active')
+    })
+    e.preventDefault()
   })
 })
