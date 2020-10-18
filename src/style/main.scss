@@ -71,6 +71,26 @@ h6,
   }
 }
 
+.video-wrap {
+  position: relative;
+  .play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.bg-gray {
+  background-color: #F7F8FD;
+}
+
+.vh-lg-100 {
+  @media(min-width: 992px){
+    height: 100vh;
+  }
+}
+
 header {
   position: absolute;
   top: 0;
@@ -251,4 +271,9 @@ footer {
       border: none;
     }
   }
+}
+
+// sweetalert2
+.swal2-content {
+  padding: 0 !important;
 }

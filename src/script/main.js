@@ -1,6 +1,7 @@
 import '../style/main.scss'
 import WebFont from 'webfontloader'
 import siblings from 'siblings'
+import Swal from 'sweetalert2'
 
 WebFont.load({
   google: {
@@ -67,3 +68,15 @@ document.querySelectorAll('.nav-tabs .nav-link').forEach((item) => {
     e.preventDefault()
   })
 })
+
+document.querySelectorAll('.video-wrap').forEach((item) => {
+  item.querySelector('.play-btn').addEventListener('click', (e) => {
+    Swal.fire({
+      width: 900,
+      padding: 0,
+      showConfirmButton: false,
+      html: `<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="${item.getAttribute('data-src')}" allowfullscreen></iframe></div>`
+    })
+    e.preventDefault()
+  })
+});
