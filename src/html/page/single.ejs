@@ -12,25 +12,8 @@
       border-radius: 1rem;
       margin-top: 1rem;
   }
-  @media(min-width: 992px){
-    #feature-1 .content {
-        position: absolute;width: 90%;padding: 2.5rem;right: 0;bottom: -100px;margin: 0;
-    }
-  }
   #feature-2 {background: #FEEBEE;position: relative;}
   #feature-2 .icon1 {display: none;}
-  @media (min-width: 992px) {
-    #feature-2 {
-      border-radius: 100px 100px 0px 0px;
-    }
-    #feature-2 .icon1 {position: absolute;left: 10%;top: -104px;z-index: -1;}
-  }
-  @media (min-width: 992px) {
-    #product-detail .table-responsive {
-      overflow: visible;
-      margin-top: 150px;
-    }
-  }
   #product-detail .table-custom td {
     padding: 1.2rem;
     font-size: 18px;
@@ -38,45 +21,64 @@
   #product-detail .table-custom td:first-child {
     white-space: nowrap;
   }
-  @media (min-width: 992px) {
-    #product-detail .table-custom td:not(:first-child) {
-      padding: 1.2rem 2.5rem;
-      min-width: 250px;
-    }
-  }
   #product-detail .table-custom td:nth-child(2) {
     border-left: solid 4px #4699D3;
     border-right: solid 4px #4699D3;
   }
-
-  @media (min-width: 992px) {
+  #product-detail .table-custom tr:first-child td:nth-child(2) {
+    border-top: solid 10px #4699D3;
+  }
+  #product-detail .table-custom tr:last-child td:nth-child(2) {
+    border-bottom: solid 4px #4699D3;
+  }
+  #feature-0 {
+    background-image:url('<%= process.env.IMAGE_PATH %>/images/single/bg-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  @media(min-width: 992px){
+    #feature-1 .content {
+        position: absolute;width: 90%;right: 0;bottom: -100px;margin: 0;
+        min-height: 200px;
+    }
+    #feature-2 {
+      border-radius: 100px 100px 0px 0px;
+    }
+    #feature-2 .icon1 {position: absolute;left: 10%;top: -104px;z-index: -1;}
+    #product-detail .table-responsive {
+      overflow: visible;
+      margin-top: 150px;
+    }
+    #product-detail .table-custom td:not(:first-child) {
+      padding: 1.2rem 2.5rem;
+      min-width: 220px;
+    }
     #product-detail .table-custom tr:first-child td {
       padding: 1.2rem;
       font-size: 24px;
     }
-  }
-
-  #product-detail .table-custom tr:first-child td:nth-child(2) {
-    border-top: solid 10px #4699D3;
-  }
-
-  @media (min-width: 992px) {
     #product-detail .table-custom tr:first-child img {
       margin-top: -100px;
       margin-bottom: 1.5rem;
       height: 145px;
     }
+    #discount .discount-pic{-webkit-transform:translateX(80px);transform:translateX(80px);margin-top: -120px;}
+    #feature-0 {
+      background:url('<%= process.env.IMAGE_PATH %>/images/single/bg-2.png') bottom no-repeat;
+    }
   }
-
-  #product-detail .table-custom tr:last-child td:nth-child(2) {
-    border-bottom: solid 4px #4699D3;
+  @media (min-width: 1600px) {
+    #product-detail .table-custom td:not(:first-child) {
+      min-width: 250px;
+    }
   }
   </style>
 </head>
 <body>
   <%= require('html-loader!../common/header2.ejs') %>
   <main>
-    <section class="py-5 bg-gray vh-lg-100" style="background-image:url('<%= process.env.IMAGE_PATH %>/images/single/banner.png');background-position: bottom;background-repeat: no-repeat;">
+    <section class="py-5 bg-gray vh-lg-100 d-flex align-items-center" style="background:url('<%= process.env.IMAGE_PATH %>/images/single/banner.png') bottom no-repeat;max-height:890px;">
       <div class="container py-5">
         <div class="row pt-lg-5">
           <div class="col-lg-7 pt-lg-5 pr-lg-5 text-lg-right">
@@ -84,23 +86,34 @@
           </div>
           <div class="col-lg-5 pt-lg-5">
             <h3 class="text-primary">Bluetti EB70</h3>
-            <h1 class="text-primary mb-3">インテリアの雰囲気を壊さないポータブル電源</h1>
-            <h4 class="text-muted mb-5">インテリアの雰囲気を壊さないポータブル電源</h4>
+            <h1 class="text-primary mb-3">性能とデザインを両立するポータブル電源</h1>
+            <h4 class="text-muted mb-5">700Wh／700W のBluetti EB70は従来のポータブル電源と違い、おしゃれなのに、実用性抜群！</h4>
             <a href="#" class="btn btn-lg btn-danger">30%OFFでゲット</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="py-5 vh-lg-100" style="background:url('<%= process.env.IMAGE_PATH %>/images/single/bg-1.png') bottom no-repeat;">
+    <section class="py-5 vh-lg-100" style="background:url('<%= process.env.IMAGE_PATH %>/images/single/bg-1.png') bottom no-repeat;max-height: 1047px;">
       <div class="container py-lg-5">
         <div class="row align-items-center">
           <div class="col-lg-5 py-3 pr-lg-5">
-            <h2 class="h1 text-primary mb-4">性能を確保する上に、美的なニーズにも対応</h2>
-            <p class="text-muted h6 mb-3">テクノロジー感覚あふれるメタリックグレーとファッション感覚あふれる椿レッドの2色から選べます。控えめな寒さでも明るくいきいきとしても、室内外の美しさのニーズにいつでも応えます。</p>
-            <p class="text-primary h6 mb-3">* 特別限定シルバーバージョンもご予約いただけます！</p>
-            <p class="text-muted h6 mb-4">今日の時代、エネルギー貯蔵電池は機能要件を</p>
-            <p class="text-secondary h4 mb-3">Bluetti EB70</p>
-            <p class="text-secondary h4">充電、写真、ビデオの撮影、より多くのニーズに対応</p>
+            <h2 class="h1 text-primary mb-4">性能を確保する上に、<br>美的なニーズにも対応</h2>
+            <p class="text-muted h6 mb-3">
+              3つの色を選択可能です。<br>
+              ・ハイテク感溢れるスチールグレー<br>
+              ・おしゃれで鮮やかなカーマイン<br>
+              ・優雅で明るいミントグリーン<br>
+              お好きなインテリアスタイルに合わせて選べます。
+            </p>
+            <p class="text-muted h6 mb-3">
+              今現在のポータブル電源は<br>
+              性能が優れるだけで満足できません。<br>
+              美的なニーズにも対応すべきです。
+            </p>
+            <p class="text-muted h6 mb-3">
+              Bluetti EB70<br>
+              性能とデザインが両立するポータブル電源
+            </p>
           </div>
           <div class="col-lg-7 py-3">
             <div class="video-wrap" data-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
@@ -119,13 +132,18 @@
     </section>
     <section class="py-5 text-center">
       <div class="container py-lg-5">
-        <h1 class="text-primary mb-4">700Whの容量、700Wの定格電力<br/>小型だけど、必要な機能を完備</h1>
+        <h2 class="text-primary mb-4 h1">716Wh/700W<br/>小型だけど、必要な機能完備</h2>
         <p class="text-muted mb-5">
-          700W固定フレーム出力のBluetii EB70<br/>
-          300Wh-700Whの中小エネルギー蓄電池に特に優れています<br/>
-          700Wは、より多くの種類のアプライアンスを使用できることを意味します<br/>
-          車の冷蔵庫、32インチテレビ、プロジェクター、電気炊飯器、電子レンジ、ヘアドライヤー<br/>
-          EB70を使用すると、どこにいても現代生活を楽しむことができます
+          従来の700Whのポータブル電源と違い<br>
+          Bluetti EB70は定格出力700Wです。<br>
+          700Wっていうことは、<br>
+          対応できる家電とデバイスが一気に増えます。<br>
+          車載冷蔵庫、<br>
+          35インチのテレビ、<br>
+          投影機、<br>
+          ミニドライヤー、<br>
+          ……<br>
+          Bluetti EB70を持ち歩けば、どこでもモーデンライフを過ごせる
         </p>
         <img src="<%= process.env.IMAGE_PATH %>/images/single/pic-2.png" alt="">
         <div class="row pt-5">
@@ -222,59 +240,104 @@
         </div>
       </div>
     </section>
-    <section class="py-5 text-white" style="background:url('<%= process.env.IMAGE_PATH %>/images/single/bg-2.png') bottom no-repeat;">
+    <section class="pb-5">
+      <div class="container pb-lg-5">
+        <div class="row align-items-center border-bottom">
+          <div class="col-lg-7 py-3 py-lg-0">
+            <img src="<%= process.env.IMAGE_PATH %>/images/single/pic-3.png" alt="">
+          </div>
+          <div class="col-lg-5 py-3">
+            <h2 class="h1 mb-4"><span class="text-warning">最大12台</span>の設備に同時充電<br/>防災からキャンプまで、<br/>電力需要にほぼ全対応</h2>
+            <p class="mb-0">
+              ACアダブターに対応することはもちろん、<br>
+              DC、USB-A、USB-C、ワイアレス充電も対応します。<br>
+              USB-Cの場合、2つとも100WのPD3.0充電に対応しますので、<br>
+              iPhone 12などスマホの充電がもっと快適になれます。
+            </p>
+			      <p class="mb-0">また、AC出力、DC出力、LED応急照明のスイッチが個別にコントロールできますので、省エネルギーの面でもお役に立てます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="feature-0" class="py-5 text-white">
       <div class="container py-lg-5">
         <div class="row">
-          <div class="col-lg-5 pt-lg-5 h6">
-            <h2 class="h1 mb-4">瞬間最大<span class="text-warning">1400W</span><br/>防災からキャンプまで、<br/>電力需要にほぼ全対応</h2>
-            <p class="mb-0">瞬間最大電力が1400Wであるため、他の中小規模のポータブル電源では使用できません。</p>
-            <p>市場に出回っている300-700Whのポータブル電源の場合、最大瞬時最大値は通常1200Wを超えず、約1000Wがより一般的です。</p>
-            <p>しかし、Bluetti EB70は異なります1400Wの瞬時最大電力は、より多くの家電製品に対応できることを意味します</p>
+          <div class="col-lg-5 pt-lg-5 pb-4 h6">
+            <h2 class="h1 mb-4"><span class="text-warning">エコ</span>をいつも心得に<br/>Bluetti特有のエコモード</h2>
+            <p class="mb-0">
+              Bluettiは地球に優しい製品を制作することを目標として、<br>
+              日々努力しています。<br>
+              EB70はBluetti特有のエコモードを搭載しますので、<br>
+              環境にやさしい省エネルギーを実現可能です。<br><br>
+              一般のポータブル電源なら、AC出力をOFFにしないと、<br>
+              アダプターをささなくても電力を消耗し続きます。<br>
+              Bluetti EB70の場合、エコモードに入ると、<br>
+              もし四時間内ACの出力は20W以下のままの場合、<br>
+              システムが自動的にAC出力をOFFにします。
+            </p>
           </div>
         </div>
       </div>
     </section>
     <section class="py-5">
       <div class="container py-lg-5">
-        <div class="row align-items-center border-bottom no-gutters">
-          <div class="col-lg-7 py-3">
-            <img src="<%= process.env.IMAGE_PATH %>/images/single/pic-3.png" alt="">
+        <div class="row align-items-center border-bottom">
+          <div class="col-lg-6 py-3">
+            <img src="<%= process.env.IMAGE_PATH %>/images/product/product-pic-10.png" alt="">
           </div>
-          <div class="col-lg-5 py-3">
-            <h2 class="h1 text-primary mb-4">最大12台のデバイスを同時に充電できます。小さいながら、複数の人のニーズを満たすことができます</h2>
-            <p class="h6 text-muted">LED非常灯に加えて、4つのACソケット、7つのDCソケット総消費電力が700W以内の場合、最大12台のデバイスの充電ニーズを満たすことができます。巨大なエネルギー貯蔵バッテリーでキャンプに行くことはありませんこれで十分！</p>
+          <div class="col-lg-6 py-3 pr-lg-5">
+            <h2 class="h1 text-primary mb-4">純正弦波出力で、<br>お使いの家電をもっと大切に</h2>
+            <h6 class="text-primary">正弦波とは？</h6>
+            <p class="text-muted">電力信号の形と形態は波形です。一般的には正弦波、矩形波、三角波、鋸刃波、4つがあり、中に最も単一な信号は正弦波です。ですので、ほぼすべての家電は正弦波に対応します。他の波形だと、対応できない家電がいろいろあります。矩形波の場合、対応できる家電も多いですが、ケーブルの発・老化が発生しやすいし、漏電の恐れもありますので、安全の面でおすすめしません。</p>
+            <h6 class="text-primary">純正弦波とは？修正波の実態は？</h6>
+            <p class="text-muted">現在、電源を売る店でよく「純正弦波」と「修正波」の単語が見れますが、実際、「純正弦波」は普通の「正弦波」で、いわゆる「修正波」は矩形波の一種の形態です。っｘ</p>
+            <h6 class="text-primary">ポータブル電源Bluetti EB70は純正弦波</h6>
+            <p class="text-muted">Bluetti EB70は純正弦波で、お使いの家電を安心・安全に給電します。</p>
           </div>
         </div>
       </div>
     </section>
     <section class="py-5 text-center" id="feature-1" style="background:url('<%= process.env.IMAGE_PATH %>/images/single/bg-3.jpg') bottom no-repeat;">
       <div class="container py-lg-5">
-        <h4 class="text-muted mb-5">3つの充電モードが完了し、ソーラー充電は最大120Wまで可能</h4>
+        <h2 class="text-primary mb-4">4つの充電モードがあり、AC充電は約3.75時間で満タン！</h2>
+        <h4 class="text-muted mb-5">充電中にデバイスを給電することも可能！</h4>
         <div class="row pb-lg-5">
-          <div class="col-lg-4 py-3 pb-lg-5">
-            <div class="wrap">
-              <img src="<%= process.env.IMAGE_PATH %>/images/single/pic-4.png" alt="">
-              <div class="content">
-                <h4 class="text-primary mb-3">25V以内のソーラーパネル（1個、最大サポート120W）</h4>
-                <p class="text-muted text-left">LED非常灯に加えて、4つのACソケット、7つのDCソケット</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 py-3 pb-lg-5">
+          <div class="col-lg-3 py-3 pb-lg-5">
             <div class="wrap">
               <img src="<%= process.env.IMAGE_PATH %>/images/single/pic-5.png" alt="">
               <div class="content">
-                <h4 class="text-primary mb-3">25V以内のソーラーパネル（1個、最大サポート120W）</h4>
-                <p class="text-muted text-left">LED非常灯に加えて、4つのACソケット、7つのDCソケット</p>
+                <h4 class="text-primary mb-3">AC充電</h4>
+                <p class="text-muted text-left">200Wで充電できるので、およそ3.75時間で満タン<br>アダプターもファン付き’ですので、安全・安心で充電可能</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 py-3 pb-lg-5">
+          <div class="col-lg-3 py-3 pb-lg-5">
+            <div class="wrap">
+              <img src="<%= process.env.IMAGE_PATH %>/images/single/pic-4.png" alt="">
+              <div class="content">
+                <h4 class="text-primary mb-3">太陽光充電</h4>
+                <p class="text-muted text-left">12-28V8Aのソーラーパネルで充電可能<br>MPPTコントローラーで太陽光充電の転換率が一般より高し</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 py-3 pb-lg-5">
             <div class="wrap">
               <img src="<%= process.env.IMAGE_PATH %>/images/single/pic-6.png" alt="">
               <div class="content">
-                <h4 class="text-primary mb-3">25V以内のソーラーパネル（1個、最大サポート120W）</h4>
-                <p class="text-muted text-left">LED非常灯に加えて、4つのACソケット、7つのDCソケット</p>
+                <h4 class="text-primary mb-3">カー充電</h4>
+                <p class="text-muted text-left">
+                  製品同梱のカーチャージケーブルを使って、運転中にも充電可能<br>
+                  曇天や雨の日も、外出中の電気補充がばっちり
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 py-3 pb-lg-5">
+            <div class="wrap">
+              <img src="<%= process.env.IMAGE_PATH %>/images/single/pic-6.png" alt="">
+              <div class="content">
+                <h4 class="text-primary mb-3">発電機充電</h4>
+                <p class="text-muted text-left">発電機よりの充電も可能<br>発電機は屋内で使えないため、発電機より快速充電して、屋内の停電対策にピッタリ</p>
               </div>
             </div>
           </div>
@@ -282,29 +345,22 @@
       </div>
     </section>
     <section class="py-5">
-      <div class="container py-lg-5">
+      <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3">
             <img src="<%= process.env.IMAGE_PATH %>/images/single/pic-7.png" alt="">
           </div>
           <div class="col-lg-6 py-3">
-            <h2 class="h1 text-primary mb-4">その充放電サイクル回数は驚異の約2500回です</h2>
-            <h6 class="text-muted">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。一般的なコアは、循環充電回数が1000回前後というだけでなく、損失率も非常に高いです。</h6>
-          </div>
-          <div class="py-5 w-100 d-none d-lg-block"></div>
-          <div class="col-lg-6 py-3 pr-lg-5">
-            <h2 class="h1 text-primary mb-4">純正弦波出力で、お客様の家電を大切にします。</h2>
-            <h6 class="text-primary">何が正弦波ですか？</h6>
-            <p class="text-muted">わたしたちの生活にとって電気は必要不可欠です。長い間、電気は安定供給されるのが当たり前と考えられていましたが、2011年の東日本大震災と2018年の北海道胆振東部地震後の経験は、ポータブル電源の世界的ブランドBLUETTIの製品開発にも大きな影響を与えることとなります。北海道の震災によるブラックアウト時の意見を取り入れて、強靭なボディーと抜群の機動性を持つポータブル電源「EB150」を開発しました。</p>
-            <h6 class="text-primary">何が正弦波ですか？</h6>
-            <p class="text-muted">わたしたちの生活にとって電気は必要不可欠です。長い間、電気は安定供給されるのが当たり前と考えられていましたが、2011年の東日本大震災と2018年の北海道胆振東部地震後の経験は、ポータブル電源の世界的ブランドBLUETTIの製品開発にも大きな影響を与えることとなります。北海道の震災によるブラックアウト時の意見を取り入れて、強靭なボディーと抜群の機動性を持つポータブル電源「EB150」を開発しました。</p>
-          </div>
-          <div class="col-lg-6 py-3">
-            <img src="<%= process.env.IMAGE_PATH %>/images/product/product-pic-10.png" alt="">
+            <h2 class="h1 text-primary mb-4">充放電サイクル回数は驚異の2500回以上</h2>
+            <p class="text-muted">Bluetti EB70は内蔵バッテリーはリン酸鉄リチウムを採用することで、電源のライフサイクルは2500回以上となります。
+            </p>
+            <h6 class="text-primary">リン酸鉄リチウムとは？</h6>
+            <p class="text-muted">過去に爆発·発火事故をたまに起こすコバルト系、ポリマー系、三元系のリチウムイオン電池と違い、リン酸鉄リチウムイオン電池のエネルギー密度が低いため、過充電·過放電の状態になっても爆発しない、今まで最も安全の電池です。<br>
+              そのため、世界中の大手電気自動車制作会社は次々とリン酸鉄リチウムを採用し始めました。 </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     <section class="py-5 text-center">
       <div class="container py-lg-5">
         <div id="feature-2" class="p-lg-5 p-3">
@@ -333,9 +389,15 @@
               </g>
             </svg>
           </i>
-          <h2 class="h1 text-primary mb-4">BMSシステムの導 安全・安定・安心</h2>
-          <p class="text-muted mb-5">ポータブル電源『AC200』にはBMS（バッテリーマネージメントシステム）がバッテリー内部に搭載されており、各セル電圧のばらつき制御を行い、バッテリーを安定的に保ちバッテリー寿命を伸ばします。更に安全面において、ポータブル電源本体には、高温保護、過電圧保護、低電圧保護、放電低温度保護、過電流保護、過負荷保護、ショート保護、充電過電圧保護などの設定を施し、皆さまに安心してお使い頂けるよう最善を尽くしております。安心＆安全をモットーに、1000回以上の試験を行いました。</p>
-          <div class="row">
+          <h2 class="h1 text-primary mb-4">BMS搭載<br>安全・安定・安心</h2>
+          <p class="text-muted mb-3 text-left mx-auto" style="max-width: 900px;">
+            ポータブル電源「Bluetti EB70」にもBMS（バッテリーマネージメントシステム）搭載することで、各セル電圧のばらつき制御を行い、バッテリーの安定・安全を確保します。<br>
+            それだけではなく、ポータブル電源Bluetti EB70の本体には、<br>
+            高温保護、過電圧保護、低電圧保護、放電低温度保護、過電流保護、過負荷保護、ショート保護、充電過電圧保護などの設定がありまして、<br>
+            皆様が安全・安心にお使いことが可能です。<br>
+          </p>
+          <a style="color: #001b6a" href="#" target="_blank" title="連続定電圧充電時の安全試験、運搬中の振動時の安全試験、高温下での組電池容器の安全試験、温度変化時の安全試験、外部短絡時の安全試験、落下時の安全試験、衝撃時の安全試験、異常高温時の安全試験、圧壊時の安全試験、低圧時の安全試験、過充電時の安全試験、強制放電時の安全試験、過充電の保護機能試験、機器落下時の組電池の安全試験">＊1000回以上の試験済みです。</a>
+          <div class="row mt-4">
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -348,7 +410,6 @@
                 </svg>
               </i>
               <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -358,8 +419,7 @@
                   <path d="M28.3333 44.7857L42.5863 20.8334V35.2144H51.6666L37.4135 59.1667V44.7857H28.3333Z" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">過充電保護</h4>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -369,8 +429,7 @@
                   <path d="M29.1667 26.6666V42.5C29.1667 48.4831 34.017 53.3333 40.0001 53.3333V53.3333C45.9832 53.3333 50.8334 48.483 50.8334 42.5V26.6666" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">過電圧保護</h4>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -384,8 +443,7 @@
                   <path d="M43.3333 30H52.4999" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">高温保護</h4>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -398,8 +456,7 @@
                   <path d="M50.0001 20.8334L41.6667 34.1667" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">過負荷保護</h4>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -409,8 +466,7 @@
                   <path d="M40 73.3333C40 73.3333 66.6667 60 66.6667 40V16.6666L40 6.66663L13.3334 16.6666V40C13.3334 60 40 73.3333 40 73.3333Z" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">過電流保護</h4>
             </div>
           </div>
         </div>
@@ -420,8 +476,8 @@
       <div class="container-sm">
         <div class="row">
           <div class="col-lg-6">
-            <h2 class="h1 text-primary mb-5">その充放電サイクル回数は驚異の約2500回です</h2>
-            <p class="text-muted h6 mb-5">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。 一般的なコアは、循環充電回数が1000回前後というだけでなく、損失率も非常に高いです。</p>
+            <h2 class="h1 text-primary mb-5">Bluetti EB70<br>ハッピーライフを応援する</h2>
+            <p class="text-muted h6 mb-5">電気のある生活は現代人に対して極めて重要なことです。アウトドアライフを安全安心かつ快適に過ごすには、ポータブル電源が不可欠の道具です。</p>
             <div class="row no-gutters pt-lg-5">
               <div class="col-lg-5 py-2 pr-lg-3">
                 <img class="mb-3 w-100" src="<%= process.env.IMAGE_PATH %>/images/single/pic-8.jpg" alt="">
@@ -446,7 +502,7 @@
                     </svg>
                   </i>
                   <p class="h1 text-muted mb-3 mt-5">家庭防災</p>
-                  <p class="h6 text-muted">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。</p>
+                  <p class="h6 text-muted">地震・津波・台風などの悪気候より、停電に遭う場合、最低限の電力提供することより、通信設備や必要な家電の利用を確保します。</p>
                 </div>
               </div>
             </div>
@@ -472,8 +528,8 @@
                       <path d="M4.23253 33.6772C5.81025 20.5977 10.8064 14.4426 13.1072 13C15.9011 14.4426 20.5 20.5 21.9819 33.6772C23.4442 46.6807 16.2298 47.7825 13.1072 46.6605C9.49159 47.7825 2.65481 46.7567 4.23253 33.6772Z" stroke="#001B6A" stroke-width="3"/>
                     </svg>
                   </i>
-                  <p class="h1 text-muted mb-3 mt-5">家庭防災</p>
-                  <p class="h6 text-muted">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。</p>
+                  <p class="h1 text-muted mb-3 mt-5">キャンプ</p>
+                  <p class="h6 text-muted">アウトドア生活を楽しむとき、Bluetti EB70があれば、デジタル製品の充電も、電気毛布などの使用も、もっと便利になれます。</p>
                 </div>
               </div>
             </div>
@@ -499,8 +555,8 @@
                       <path d="M76 12.5072L77.484 12.7261L77.818 10.461L75.608 11.0594L76 12.5072ZM65.3071 3L66.7911 3.21884L67.1251 0.953812L64.9151 1.55212L65.3071 3ZM75.608 11.0594C75.0211 11.2183 74.4022 11.3035 73.7612 11.3035V14.3035C74.6694 14.3035 75.5518 14.1826 76.392 13.9551L75.608 11.0594ZM73.7612 11.3035C69.8698 11.3035 66.7152 8.14891 66.7152 4.25755H63.7152C63.7152 9.80577 68.2129 14.3035 73.7612 14.3035V11.3035ZM66.7152 4.25755C66.7152 3.9038 66.7412 3.55703 66.7911 3.21884L63.8232 2.78116C63.752 3.26379 63.7152 3.75684 63.7152 4.25755H66.7152ZM60.5 11.2497C60.5 7.99913 62.7025 5.25916 65.6991 4.44788L64.9151 1.55212C60.644 2.70846 57.5 6.60999 57.5 11.2497H60.5ZM67.5459 18.2956C63.6546 18.2956 60.5 15.141 60.5 11.2497H57.5C57.5 16.7979 61.9977 21.2956 67.5459 21.2956V18.2956ZM74.5161 12.2884C74.0149 15.6868 71.0837 18.2956 67.5459 18.2956V21.2956C72.5933 21.2956 76.7689 17.5748 77.484 12.7261L74.5161 12.2884Z" fill="#001B6A"/>
                     </svg>
                   </i>
-                  <p class="h1 text-muted mb-3 mt-5">家庭防災</p>
-                  <p class="h6 text-muted">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。</p>
+                  <p class="h1 text-muted mb-3 mt-5">車中泊</p>
+                  <p class="h6 text-muted">改造車でも、キャンピングカーでも、一台のBluetti EB70があれば、もっと安心・快適な車中泊ライフが過ごせます。</p>
                 </div>
               </div>
               <div class="col-lg-5 py-2 pl-lg-3">
@@ -512,26 +568,36 @@
         </div>
       </div>
     </section>
-    <section>
-      <a href="#">
-        <img class="w-100" src="<%= process.env.IMAGE_PATH %>/images/single/coupon.png" alt="">
-      </a>
+    <section class="text-center text-lg-left pb-5 pb-lg-0" style="background-color: #FEF3E6;" id="discount">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <img class="discount-pic" src="<%= process.env.IMAGE_PATH %>/images/single/discount.svg" alt="">
+          </div>
+          <div class="col-lg-7 pb-4 pb-lg-0">
+            <h2 class="text-huge text-primary">CAMPFIRE 絶賛予約中</h2>
+          </div>
+          <div class="col-lg-2">
+            <a href="#" class="btn btn-danger btn-lg">今すぐ予約</a>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="product-detail" class="py-5 text-center">
       <div class="container-sm py-lg-4">
-        <h2 class="h1 text-primary my-5">製品の規格は他社と比較する</h2>
+        <h2 class="h1 text-primary my-5">製品の規格・他社製品と比較</h2>
         <div class="table-responsive">
           <table class="table table-bordered text-muted table-custom">
             <tbody>
               <tr class="bg-light">
-                <td class="text-left">Product</td>
+                <td class="text-left">製品名</td>
                 <td class="text-dark">
                   <img src="/images/product/product-bt.png" alt="">
-                  <p class="h5">AC 200</p>
+                  <p class="h5">Bluetti EB70</p>
                 </td>
                 <td class="text-dark">
                   <img src="/images/product/product-other-2.png" alt="">
-                  <p class="h5">ポータブル電源 700</p>
+                  <p class="h5">A社ポータブル電源</p>
                 </td>
                 <td class="text-dark">
                   <img src="/images/product/product-other.png" alt="">
@@ -543,35 +609,67 @@
                 </td>
               </tr>
               <tr>
-                <td class="text-left">Battery Type</td>
-                <td class="text-info">Battery Type</td>
-                <td>LG,EV-grade Lithium-ion</td>
-                <td>LG,EV-grade Lithium-ion</td>
-                <td>LG,EV-grade Lithium-ion</td>
+                <td class="text-left">内蔵バッテリー<br>リン酸鉄リチウム</td>
+                <td class="text-info">○</td>
+                <td>☓</td>
+                <td>☓</td>
+                <td>☓</td>
               </tr>
               <tr class="bg-light">
-                <td class="text-left">Capacity</td>
-                <td class="text-info">1700Wh</td>
-                <td>1700Wh</td>
+                <td class="text-left">容量</td>
+                <td class="text-info">716Wh</td>
+                <td>700Wh</td>
                 <td>1700Wh</td>
                 <td>1700Wh</td>
               </tr>
               <tr>
-                <td class="text-left">Battery Type</td>
-                <td class="text-info">Battery Type</td>
-                <td>LG,EV-grade Lithium-ion</td>
+                <td class="text-left">定格出力</td>
+                <td class="text-info">700W</td>
+                <td>500W</td>
                 <td>LG,EV-grade Lithium-ion</td>
                 <td>LG,EV-grade Lithium-ion</td>
               </tr>
               <tr class="bg-light">
-                <td class="text-left">Capacity</td>
-                <td class="text-info">1700Wh</td>
-                <td>1700Wh</td>
+                <td class="text-left">瞬間最大出力</td>
+                <td class="text-info">1,400W</td>
+                <td>1,000W</td>
                 <td>1700Wh</td>
                 <td>1700Wh</td>
               </tr>
               <tr>
-                <td class="text-left">MPPT Charge</td>
+                <td class="text-left">MPPTコントローラー</td>
+		        <td class="text-info">○</td>
+                <td>○</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr><tr class="bg-light">
+			    <td class="text-left">最短充電時間</td>
+				       <td class="text-info">約3.75時間</td>
+                <td>約8.5時間</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr>
+				<tr>
+			    <td class="text-left">充電温度</td>
+				       <td class="text-info">0−40℃</td>
+                <td>0−40℃</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr>
+				<tr class="bg-light">
+			    <td class="text-left">動作温度</td>
+				       <td class="text-info">−20℃−40℃</td>
+                <td>−10℃−40℃</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr>
+				<tr>
+			    <td class="text-left">同時給電可能の<br>最大デバイス数</td>
+				       <td class="text-info">12</td>
+                <td>8</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr>
                 <td class="text-info">
                   <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
@@ -598,12 +696,22 @@
         </div>
       </div>
     </section>
+    <section class="text-center">
+      <div class="container">
+        <div class="share-btn" data-url="https://www.bluetti.jp/pages/bluetti-eb70-funding" data-title="bluetti-eb70-funding" data-desc="bluetti-eb70-funding">
+          <a class="btn-twitter btn btn-outline-primary" data-id="tw">
+            <svg t="1606030771392" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2738" width="1.5rem" height="1.5rem"><path d="M1024 186.368a410.325333 410.325333 0 0 1-120.618667 33.877333 214.954667 214.954667 0 0 0 92.373334-119.125333 413.781333 413.781333 0 0 1-133.504 52.181333A207.189333 207.189333 0 0 0 708.949333 85.333333c-115.968 0-210.005333 96.426667-210.005333 215.424 0 16.896 1.792 33.28 5.376 49.066667-174.592-9.002667-329.386667-94.72-433.066667-225.152a219.306667 219.306667 0 0 0-28.416 108.373333c0 74.709333 37.12 140.672 93.44 179.328a206.250667 206.250667 0 0 1-95.146666-26.88v2.645334c0 104.405333 72.405333 191.488 168.533333 211.2a200.32 200.32 0 0 1-55.296 7.594666c-13.525333 0-26.752-1.28-39.552-3.84 26.709333 85.589333 104.277333 147.882667 196.224 149.546667A414.805333 414.805333 0 0 1 0 841.941333 584.96 584.96 0 0 0 322.048 938.666667c386.474667 0 597.76-328.192 597.76-612.906667 0-9.386667-0.213333-18.730667-0.554667-27.904 41.045333-30.378667 76.672-68.266667 104.746667-111.488" fill="#55ACEE" p-id="2739"></path></svg>
+            <span class="ml-1">Twitter</span>
+          </a>
+        </div>
+      </div>
+    </section>
     <section class="py-5 text-center">
       <div class="container-sm py-lg-5" style="background:url('<%= process.env.IMAGE_PATH %>/images/single/bg-7.png') center no-repeat;background-size: contain;">
         <div class="py-lg-5">
           <h3 class="text-muted mb-4">Bluetti EB70</h3>
-          <h2 class="text-primary h1 mb-5">実用性と美観性が両立する<br/>ポータブル電源</h2>
-          <a href="#" class="btn btn-lg btn-danger">30%OFFでゲット</a>
+          <h2 class="text-primary h1 mb-5">実用性と美観性が融合する<br/>ポータブル電源</h2>
+          <a href="#" target="_blank" class="btn btn-lg btn-danger">30%OFFでゲット</a>
         </div>
       </div>
     </section>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+  </head>
+  <body data-page="list">
+    <%= require('html-loader!../common/header2.ejs') %>
+    <main>
+      <section id="banner" class="text-white d-flex align-items-center py-5" style="background: url('https://cdn.shopify.com/s/files/1/0415/2072/6176/files/bg-1_f290c8f2-21a0-4978-9eaf-beda4861b964.jpg?v=1607262770') center no-repeat;">
+        <div class="container py-5">
+          <h1 class="text-huge mb-4">ポータブル電源一覧</h1>
+          <h2>いつでも、どこでも、電気のある生活を続ける</h2>
+        </div>
+      </section>
+      <section class="py-5" id="list-content">
+        <div class="container">
+          <nav>
+            <div class="nav nav-tabs flex-column flex-lg-row" role="tablist">
+              <a class="nav-link active" id="nav-1-tab" data-toggle="tab" data-target=".power" href="javascript:;" role="tab" aria-controls="nav-1" aria-selected="true">全製品</a>
+              <a class="nav-link" id="nav-2-tab" data-toggle="tab" data-target=".power1" href="javascript:;" role="tab" aria-controls="nav-2" aria-selected="false">500W以下</a>
+              <a class="nav-link" id="nav-3-tab" data-toggle="tab" data-target=".power2" href="javascript:;" role="tab" aria-controls="nav-3" aria-selected="false">500W及以上</a>
+              <a class="nav-link" id="nav-4-tab" data-toggle="tab" data-target=".power3" href="javascript:;" role="tab" aria-controls="nav-4" aria-selected="false">1000W及以上</a>
+            </div>
+          </nav>
+          <div class="tab-content pt-lg-4">
+            <div class="row">
+              <div class="col-lg-6 py-3 power power1 active">
+                <div class="border position-relative">
+                  <img class="position-absolute" style="left: -20px;top: 20px;z-index: 9;width: 160px;" src="<%= process.env.IMAGE_PATH %>/images/discount.svg" alt="">
+                  <div class="row no-gutters">
+                    <div class="col-lg-5 bg-light">
+                      <div class="d-flex h-100 align-items-center justify-content-center p-5">
+                        <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/product.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7 px-2">
+                      <div class="p-4">
+                        <h3 class="mb-3">Bluetti EB70</h3>
+                        <a href=""><img class="mb-4" src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-1.png" alt=""></a>
+                        <table class="table table-borderless h6 text-muted mb-4">
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">容量</td>
+                            <td>2000Wh</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold">定格出力</td>
+                            <td>2000W</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">重量</td>
+                            <td>27.5kg</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">寸法</td>
+                            <td>493.5＊165.4＊364.7mm³</td>
+                          </tr>
+                        </table>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="pl-lg-3">
+                            <h4 class="text-info">¥239,880</h4>
+                            <p><del class="text-muted">¥299,800</del></p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-secondary ml-lg-4 ml-2 text-nowrap">今すぐ購入</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 py-3 power power1 active">
+                <div class="border position-relative">
+                  <div class="row no-gutters">
+                    <div class="col-lg-5 bg-light">
+                      <div class="d-flex h-100 align-items-center justify-content-center p-5">
+                        <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/product.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7 px-2">
+                      <div class="p-4">
+                        <h3 class="mb-3">Bluetti EB70</h3>
+                        <a href=""><img class="mb-4" src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-1.png" alt=""></a>
+                        <table class="table table-borderless h6 text-muted mb-4">
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">容量</td>
+                            <td>2000Wh</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold">定格出力</td>
+                            <td>2000W</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">重量</td>
+                            <td>27.5kg</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">寸法</td>
+                            <td>493.5＊165.4＊364.7mm³</td>
+                          </tr>
+                        </table>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="pl-lg-3">
+                            <h4 class="text-info">¥239,880</h4>
+                            <p><del class="text-muted">¥299,800</del></p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-secondary ml-lg-4 ml-2 text-nowrap">今すぐ購入</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 py-3 power power2 active">
+                <div class="border position-relative">
+                  <div class="row no-gutters">
+                    <div class="col-lg-5 bg-light">
+                      <div class="d-flex h-100 align-items-center justify-content-center p-5">
+                        <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/product.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7 px-2">
+                      <div class="p-4">
+                        <h3 class="mb-3">Bluetti EB70</h3>
+                        <a href=""><img class="mb-4" src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-1.png" alt=""></a>
+                        <table class="table table-borderless h6 text-muted mb-4">
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">容量</td>
+                            <td>2000Wh</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold">定格出力</td>
+                            <td>2000W</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">重量</td>
+                            <td>27.5kg</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">寸法</td>
+                            <td>493.5＊165.4＊364.7mm³</td>
+                          </tr>
+                        </table>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="pl-lg-3">
+                            <h4 class="text-info">¥239,880</h4>
+                            <p><del class="text-muted">¥299,800</del></p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-secondary ml-lg-4 ml-2 text-nowrap">今すぐ購入</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 py-3 power power2 active">
+                <div class="border position-relative">
+                  <div class="row no-gutters">
+                    <div class="col-lg-5 bg-light">
+                      <div class="d-flex h-100 align-items-center justify-content-center p-5">
+                        <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/product.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7 px-2">
+                      <div class="p-4">
+                        <h3 class="mb-3">Bluetti EB70</h3>
+                        <a href=""><img class="mb-4" src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-1.png" alt=""></a>
+                        <table class="table table-borderless h6 text-muted mb-4">
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">容量</td>
+                            <td>2000Wh</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold">定格出力</td>
+                            <td>2000W</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">重量</td>
+                            <td>27.5kg</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">寸法</td>
+                            <td>493.5＊165.4＊364.7mm³</td>
+                          </tr>
+                        </table>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="pl-lg-3">
+                            <h4 class="text-info">¥239,880</h4>
+                            <p><del class="text-muted">¥299,800</del></p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-secondary ml-lg-4 ml-2 text-nowrap">今すぐ購入</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 py-3 power power3 active">
+                <div class="border position-relative">
+                  <div class="row no-gutters">
+                    <div class="col-lg-5 bg-light">
+                      <div class="d-flex h-100 align-items-center justify-content-center p-5">
+                        <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/product.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7 px-2">
+                      <div class="p-4">
+                        <h3 class="mb-3">Bluetti EB70</h3>
+                        <a href=""><img class="mb-4" src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-1.png" alt=""></a>
+                        <table class="table table-borderless h6 text-muted mb-4">
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">容量</td>
+                            <td>2000Wh</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold">定格出力</td>
+                            <td>2000W</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">重量</td>
+                            <td>27.5kg</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">寸法</td>
+                            <td>493.5＊165.4＊364.7mm³</td>
+                          </tr>
+                        </table>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="pl-lg-3">
+                            <h4 class="text-info">¥239,880</h4>
+                            <p><del class="text-muted">¥299,800</del></p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-secondary ml-lg-4 ml-2 text-nowrap">今すぐ購入</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 py-3 power power3 active">
+                <div class="border position-relative">
+                  <div class="row no-gutters">
+                    <div class="col-lg-5 bg-light">
+                      <div class="d-flex h-100 align-items-center justify-content-center p-5">
+                        <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/product.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7 px-2">
+                      <div class="p-4">
+                        <h3 class="mb-3">Bluetti EB70</h3>
+                        <a href=""><img class="mb-4" src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-1.png" alt=""></a>
+                        <table class="table table-borderless h6 text-muted mb-4">
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">容量</td>
+                            <td>2000Wh</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold">定格出力</td>
+                            <td>2000W</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">重量</td>
+                            <td>27.5kg</td>
+                          </tr>
+                          <tr>
+                            <td class="font-weight-bold text-nowrap">寸法</td>
+                            <td>493.5＊165.4＊364.7mm³</td>
+                          </tr>
+                        </table>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="pl-lg-3">
+                            <h4 class="text-info">¥239,880</h4>
+                            <p><del class="text-muted">¥299,800</del></p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-secondary ml-lg-4 ml-2 text-nowrap">今すぐ購入</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 bg-light text-center">
+        <div class="container py-lg-5">
+          <h2 class="h1 text-primary mb-4">ポータブル電源とは？</h2>
+          <p class="h6 text-muted mb-5 mx-auto text-left" style="max-width: 900px;">
+            ポータブル電源とは、大容量蓄電池を内蔵する高出力の給電設備です。いま現在の市販品が内蔵するのはほぼリチウムイオン電池ですが、リチウムイオン電池にも様々な種類がありますので、型番が違うポータブル電源の安定性と充放電ライフサイクルも違います。<br>
+            出力ついて、ACポート、DCポート、USBポート、三種の出力ポートを備えているのが一般的な仕様です。ただ、技術の発展とともに進歩して、ワイアレス充電など給電形式もポータブル電源につくことになりました。<br>
+            ポータブル電源の充電方式を大きく分けて3種類に分けられます。それはAC充電、カー充電、ソーラーパネル充電となります。発電機と違い、ガソリンを使わないので、匂いがしなくて、ガス排出もありません。そして、騒音問題も起こさないです。簡単に言うと、環境にやさしい給電設備です。<br>
+            また、ポータブル電源と発電機と比べて、静音、エコのほか、メンテナンスいらない、室内でも使えることも非常に魅力的なポイントです。
+          </p>
+          <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-2.png" alt="">
+        </div>
+      </section>
+      <section class="py-5 text-center">
+        <div class="container py-lg-4">
+          <div class="py-4 text-center text-primary mb-5 text-bg-logo" style="background-image: url('/images/home/logo-text.svg');background-repeat: no-repeat;background-position: center;">
+            <h2 class="text-huge">ポータブル電源による<br/>省エネルギー対策</h2>
+          </div>
+          <p class="h6 text-muted mb-5 mx-auto text-left" style="max-width: 900px;">
+            政府統計の調査結果によると、2019（令和元年）1世代あたりの月間平均電気代は9100円です。節約のためにも、環境に優しいためにも太陽光発電や風力発電などの清潔エネルギーを使うことがおすすめです。<br>その中に、一般家庭に推奨するのは太陽光発電ですが、お家の状況が違いますので、5kWのような大型ソーラーパネルが使えないケースが多いです。そのようなご家庭に小型ソーラーパネルとポータブル電源を併用して、電気代を減らす対策をおすすめします。<br>
+            ですので、キャンプや車中泊、防災に限定しなくて、計画的にソーラーパネル充電を利用すれば、省エネルギーの目標を達成することが可能です。<br>
+            特にBluetti AC200のような超大容量·超大出力ポータブル電源を使えば、オフグリッド生活を送ることも不可能ではないです。
+          </p>
+          <div class="row">
+            <div class="col-lg-6 py-3">
+              <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-3.png" alt="">
+              <p class="pt-3">这里给一点文字说明的空间</p>
+            </div>
+            <div class="col-lg-6 py-3">
+              <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-4.png" alt="">
+              <p class="pt-3">这里给一点文字说明的空间</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 bg-light text-center">
+        <div class="container py-lg-5">
+          <h2 class="h1 text-primary mb-4">ポータブル電源との活用</h2>
+          <p class="h6 text-muted mb-5 mx-auto text-left" style="max-width: 900px;">ポータブル電源を利用して、何ができますか？<br>
+            一般的に認知はキャンプ、車中泊、及び停電対策の道具となります。<br>
+            ·アウトドアライフを快適に送るため、夏には扇風機とミニ冷蔵庫、冬には電気毛布、四季にはスマホとカメラなどデジタル製品の充電が不可欠です。一台のポータブル電源があれば、上述のニーズにほぼ全対応できます。<br>
+            ·より大容量のポータブル電源を使うと、電子レンジやIH調理器、カフェ−メーカーなど使えることも可能です。<br>
+            ·停電対策はもちろん、ソーラーパネルを備え場、室外で避難する場合、一台のポータブル電源があれば、最低限の現代生活を送ることができます。<br>
+            ·日常において、ソーラーパネルとポータブル電源をうまく利用すれば、省電力対策にもなれます。<br>
+            色んな面で、ポータブル電源は日常の家庭生活を安心に送るため不可欠な備品となります。
+          </p>
+          <div class="row">
+            <div class="col-lg-4 py-3">
+              <div class="position-relative">
+                <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-5.jpg" alt="">
+                <p class="position-absolute h4 text-white" style="left: 1.5rem; top: 1.5rem;">停電対策</p>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="position-relative">
+                <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-6.jpg" alt="">
+                <p class="position-absolute h4 text-white" style="left: 1.5rem; top: 1.5rem;">キャンプ</p>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="position-relative">
+                <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-7.jpg" alt="">
+                <p class="position-absolute h4 text-white" style="left: 1.5rem; top: 1.5rem;">車中泊</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5" id="feature-1">
+        <div class="container py-lg-4">
+          <h2 class="h1 text-primary mb-5 text-center">ポータブル電源の選択</h2>
+          <div class="row">
+            <div class="col-lg-6 pr-lg-5 py-lg-5">
+              <div class="row">
+                <div class="col-lg-4 py-3 text-center">
+                  <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-8.svg" alt="">
+                </div>
+                <div class="col-lg-8 py-3">
+                  <h4 class="text-primary mb-3 text-center text-lg-left">容量</h4>
+                  <p class="text-muted h6">
+                    ポータブル電源の容量が大きければ、それだけ体積や重量も大きくなります。
+                    当然、価格的にもそれなりに高くなります。<br>
+					          御ニーズに合わせて、最適な電源を選びましょう
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pl-lg-5 py-4 py-lg-5">
+              <div class="row">
+                <div class="col-lg-4 py-3 text-center">
+                  <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-9.svg" alt="">
+                </div>
+                <div class="col-lg-8 py-3">
+                  <h4 class="text-primary mb-3 text-center text-lg-left">定格出力</h4>
+                  <p class="text-muted h6">定格出力とは指定された条件下で、原動機などの機械類が安全に達成できる最大出力です。ポータブル電源の場合、定格出力の数値が高いほど、使える設備の種類が多くなります。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pr-lg-5 py-lg-5">
+              <div class="row">
+                <div class="col-lg-4 py-3 text-center">
+                  <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-10.svg" alt="">
+                </div>
+                <div class="col-lg-8 py-3">
+                  <h4 class="text-primary mb-3 text-center text-lg-left">瞬間最大出力</h4>
+                  <p class="text-muted h6">ドライヤーなどの家電は、起動する瞬間、ほぼ通常の最大出力を超えます。ポータブル電源の瞬間最大出力は家電の瞬間最大出力を超えないと、その家電が起動できません。ですので、ポータブル電源の瞬間最大出力も重要な参考数値です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pr-lg-5 py-lg-5">
+              <div class="row">
+                <div class="col-lg-4 py-3 text-center">
+                  <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-11.svg" alt="">
+                </div>
+                <div class="col-lg-8 py-3">
+                  <h4 class="text-primary mb-3 text-center text-lg-left">安全性</h4>
+                  <p class="text-muted h6">BMS（バッテリーマネージメントシステム）はポータブル電源に対して、すごく重要です。このシステムは常にバッテリーの状態を監視し、電流と電圧などの異常を感知して調整することができます。BMSを搭載するポータブル電源はより安全で安心に使用できます。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pr-lg-5 py-lg-5">
+              <div class="row">
+                <div class="col-lg-4 py-3 text-center">
+                  <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-12.svg" alt="">
+                </div>
+                <div class="col-lg-8 py-3">
+                  <h4 class="text-primary mb-3 text-center text-lg-left">正弦波</h4>
+                  <p class="text-muted h6">電力信号の中、最も単一の波形は正弦波です。そして、ほぼすべての家電は正弦波に対応します。ポータブル電源の出力は正弦波ではないと、家電を壊す恐れがあります。<br>＊世の中、「純正弦波」と「修正波」の言い方がありますが、実際のところ、「純正弦波」は普通の「正弦波」、「修正波」は一種の「矩形は」です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pr-lg-5 py-lg-5">
+              <div class="row">
+                <div class="col-lg-4 py-3 text-center">
+                  <img src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic-13.svg" alt="">
+                </div>
+                <div class="col-lg-8 py-3">
+                  <h4 class="text-primary mb-3 text-center text-lg-left">携帯と収納</h4>
+                  <p class="text-muted h6">大容量と大出力、かつ安全のポータブル電源を求める以上、重量的にどうしても軽くなれません。車で持ち運ぶのが一般的な状況ですが、手持ちで移動する場合もあります。ですので、ハンドルの持ちやすさは非常に重要です。<br>車と部屋のスペースとインテリアに合わせて、収納しやすいこともポイントの一つです。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 bg-light text-center">
+        <div class="container py-lg-4">
+          <div class="py-4 text-center text-primary mb-lg-5" style="background-image: url('/images/home/logo-text.svg');background-size: contain;background-repeat: no-repeat;background-position: center;">
+            <h2 class="text-huge">人気製品</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 py-3">
+              <div class="h-100">
+                <div class="img-box position-relative">
+                  <div class="bg-primary position-absolute w-100 h-50" style="left: 0;bottom:0;"></div>
+                  <img class="position-relative" style="height: 100%;" src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic7.png" alt="">
+                </div>
+                <div class="px-4 pb-5 bg-primary text-white">
+                  <h4 class="mb-4">Bluetti EB150</h4>
+                  <p class="mb-4">太陽光発電所は最近十数セントですが、この小さなパッケージでこの強力なスペックを誇ることはめったにありません！</p>
+                  <a href="#" class="custom-link text-secondary">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="h-100">
+                <div class="img-box position-relative">
+                  <div class="bg-primary position-absolute w-100 h-50" style="left: 0;bottom:0;"></div>
+                  <img class="position-relative" style="height: 100%;" src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic8.png" alt="">
+                </div>
+                <div class="px-4 pb-5 bg-primary text-white">
+                  <h4 class="mb-4">Bluetti EB150</h4>
+                  <p class="mb-4">太陽光発電所は最近十数セントですが、この小さなパッケージでこの強力なスペックを誇ることはめったにありません！</p>
+                  <a href="#" class="custom-link text-secondary">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="h-100">
+                <div class="img-box position-relative">
+                  <div class="bg-primary position-absolute w-100 h-50" style="left: 0;bottom:0;"></div>
+                  <img class="position-relative" style="height: 100%;" src="https://cdn.shopify.com/s/files/1/0415/2072/6176/files/pic8.png" alt="">
+                </div>
+                <div class="px-4 pb-5 bg-primary text-white">
+                  <h4 class="mb-4">Bluetti EB150</h4>
+                  <p class="mb-4">太陽光発電所は最近十数セントですが、この小さなパッケージでこの強力なスペックを誇ることはめったにありません！</p>
+                  <a href="#" class="custom-link text-secondary">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>

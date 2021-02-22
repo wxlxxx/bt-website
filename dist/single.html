@@ -12,25 +12,8 @@
       border-radius: 1rem;
       margin-top: 1rem;
   }
-  @media(min-width: 992px){
-    #feature-1 .content {
-        position: absolute;width: 90%;padding: 2.5rem;right: 0;bottom: -100px;margin: 0;
-    }
-  }
   #feature-2 {background: #FEEBEE;position: relative;}
   #feature-2 .icon1 {display: none;}
-  @media (min-width: 992px) {
-    #feature-2 {
-      border-radius: 100px 100px 0px 0px;
-    }
-    #feature-2 .icon1 {position: absolute;left: 10%;top: -104px;z-index: -1;}
-  }
-  @media (min-width: 992px) {
-    #product-detail .table-responsive {
-      overflow: visible;
-      margin-top: 150px;
-    }
-  }
   #product-detail .table-custom td {
     padding: 1.2rem;
     font-size: 18px;
@@ -38,73 +21,103 @@
   #product-detail .table-custom td:first-child {
     white-space: nowrap;
   }
-  @media (min-width: 992px) {
-    #product-detail .table-custom td:not(:first-child) {
-      padding: 1.2rem 2.5rem;
-      min-width: 250px;
-    }
-  }
   #product-detail .table-custom td:nth-child(2) {
     border-left: solid 4px #4699D3;
     border-right: solid 4px #4699D3;
   }
-
-  @media (min-width: 992px) {
+  #product-detail .table-custom tr:first-child td:nth-child(2) {
+    border-top: solid 10px #4699D3;
+  }
+  #product-detail .table-custom tr:last-child td:nth-child(2) {
+    border-bottom: solid 4px #4699D3;
+  }
+  #feature-0 {
+    background-image:url('./images/single/bg-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  @media(min-width: 992px){
+    #feature-1 .content {
+        position: absolute;width: 90%;right: 0;bottom: -100px;margin: 0;
+        min-height: 200px;
+    }
+    #feature-2 {
+      border-radius: 100px 100px 0px 0px;
+    }
+    #feature-2 .icon1 {position: absolute;left: 10%;top: -104px;z-index: -1;}
+    #product-detail .table-responsive {
+      overflow: visible;
+      margin-top: 150px;
+    }
+    #product-detail .table-custom td:not(:first-child) {
+      padding: 1.2rem 2.5rem;
+      min-width: 220px;
+    }
     #product-detail .table-custom tr:first-child td {
       padding: 1.2rem;
       font-size: 24px;
     }
-  }
-
-  #product-detail .table-custom tr:first-child td:nth-child(2) {
-    border-top: solid 10px #4699D3;
-  }
-
-  @media (min-width: 992px) {
     #product-detail .table-custom tr:first-child img {
       margin-top: -100px;
       margin-bottom: 1.5rem;
       height: 145px;
     }
+    #discount .discount-pic{-webkit-transform:translateX(80px);transform:translateX(80px);margin-top: -120px;}
+    #feature-0 {
+      background:url('./images/single/bg-2.png') bottom no-repeat;
+    }
   }
-
-  #product-detail .table-custom tr:last-child td:nth-child(2) {
-    border-bottom: solid 4px #4699D3;
+  @media (min-width: 1600px) {
+    #product-detail .table-custom td:not(:first-child) {
+      min-width: 250px;
+    }
   }
   </style>
-<link href="http://62.234.217.81/assets/app.css" rel="stylesheet"></head>
+<link href="./assets/app.css?v=1613545227612" rel="stylesheet"></head>
 <body>
-  <header> <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <a class="navbar-brand" href="#"><img src="/icons/logo.svg" alt=""></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarSupportedContent"> <ul class="navbar-nav mx-auto"> <li class="nav-item"> <a class="nav-link" href="#">ポータブル電源</a> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> モバイルバッテリー </a> <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <div class="dropdown-divider"></div> <a class="dropdown-item" href="#">Something else here</a> </div> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ソーラーパネル </a> <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <div class="dropdown-divider"></div> <a class="dropdown-item" href="#">Something else here</a> </div> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 会社情報 </a> <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <div class="dropdown-divider"></div> <a class="dropdown-item" href="#">Something else here</a> </div> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> サポート </a> <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <div class="dropdown-divider"></div> <a class="dropdown-item" href="#">Something else here</a> </div> </li> </ul> <ul class="navbar-nav"> <li class="nav-item"> <a class="nav-link" href="#"> <svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> </svg> </a> </li> <li class="nav-item"> <a class="nav-link" href="#"> <svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/> <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/> </svg> </a> </li> <li class="nav-item"> <a class="nav-link" href="#"> <svg width="1.2rem" height="1.2rem" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/> </svg> </a> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 日本 </a> <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">日本</a> <a class="dropdown-item" href="#">日本</a> </div> </li> </ul> </div> </nav> </header> 
+  <header> <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <a class="navbar-brand" href="#"><img src="/icons/logo.svg" alt=""></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarSupportedContent"> <ul class="navbar-nav mx-auto"> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#navbar-fixed-1" data-toggle="dropdown" aria-expanded="false"> ポータブル電源 </a> <div class="dropdown-menu"> <a class="dropdown-item" href="#">AC20/200Wh</a> <a class="dropdown-item" href="#">EB40/400Wh</a> <a class="dropdown-item" href="#">AC100/1000Wh</a> <a class="dropdown-item" href="#">EB150/1500Wh</a> <a class="dropdown-item" href="#">EB240/2400Wh</a> <a class="dropdown-item" href="#">K5/297Wh</a> </div> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#navbar-fixed-2" data-toggle="dropdown" aria-expanded="false"> モバイルバッテリー </a> <div class="dropdown-menu"> <a class="dropdown-item" href="#">AC20/200Wh</a> <a class="dropdown-item" href="#">EB40/400Wh</a> <a class="dropdown-item" href="#">AC100/1000Wh</a> <a class="dropdown-item" href="#">EB150/1500Wh</a> <a class="dropdown-item" href="#">EB240/2400Wh</a> </div> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#navbar-fixed-3" data-toggle="dropdown" aria-expanded="false"> ソーラーパネル </a> <div class="dropdown-menu"> <a class="dropdown-item" href="#">AC20/200Wh</a> <a class="dropdown-item" href="#">EB40/400Wh</a> <a class="dropdown-item" href="#">AC100/1000Wh</a> <a class="dropdown-item" href="#">EB150/1500Wh</a> </div> </li> <li class="nav-item"> <a class="nav-link" href="#">会社情報</a> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#navbar-fixed-4" data-toggle="dropdown" aria-expanded="false"> ソーラーパネル </a> <div class="dropdown-menu"> <a class="dropdown-item" href="#">保証と返品</a> <a class="dropdown-item" href="#">よくある質問</a> <a class="dropdown-item" href="#">お問い合わせ</a> </div> </li> </ul> <ul class="navbar-nav"> <li class="nav-item"> <a class="nav-link" href="#"> <svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> </svg> </a> </li> <li class="nav-item"> <a class="nav-link" href="#"> <svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/> <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/> </svg> </a> </li> <li class="nav-item"> <a class="nav-link" href="#"> <svg width="1.2rem" height="1.2rem" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/> </svg> </a> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 日本 </a> <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">日本</a> <a class="dropdown-item" href="#">日本</a> </div> </li> </ul> </div> </nav> <nav class="navbar-fixed" id="navbar-fixed-1"> <div class="container"> <div class="row link-inherit"> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-1.png" alt=""> <p class="h6 mb-0 mt-3">AC20/200Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-2.png" alt=""> <p class="h6 mb-0 mt-3">EB40/400Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-3.png" alt=""> <p class="h6 mb-0 mt-3">AC100/1000Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-4.png" alt=""> <p class="h6 mb-0 mt-3">EB150/1500Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-5.png" alt=""> <p class="h6 mb-0 mt-3">EB240/2400Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-6.png" alt=""> <p class="h6 mb-0 mt-3">K5/297Wh</p> </a> </div> </div> </div> </nav> <nav class="navbar-fixed" id="navbar-fixed-2"> <div class="container"> <div class="row link-inherit"> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-1.png" alt=""> <p class="h6 mb-0 mt-3">AC20/200Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-2.png" alt=""> <p class="h6 mb-0 mt-3">EB40/400Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-3.png" alt=""> <p class="h6 mb-0 mt-3">AC100/1000Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-4.png" alt=""> <p class="h6 mb-0 mt-3">EB150/1500Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-5.png" alt=""> <p class="h6 mb-0 mt-3">EB240/2400Wh</p> </a> </div> </div> </div> </nav> <nav class="navbar-fixed" id="navbar-fixed-3"> <div class="container"> <div class="row link-inherit"> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-1.png" alt=""> <p class="h6 mb-0 mt-3">AC20/200Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-2.png" alt=""> <p class="h6 mb-0 mt-3">EB40/400Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-3.png" alt=""> <p class="h6 mb-0 mt-3">AC100/1000Wh</p> </a> </div> <div class="col-lg-2"> <a href="#"> <img src="/images/pic-prod-4.png" alt=""> <p class="h6 mb-0 mt-3">EB150/1500Wh</p> </a> </div> </div> </div> </nav> <nav class="navbar-fixed" id="navbar-fixed-4"> <div class="container"> <div class="d-flex justify-content-center"> <div> <a href="#" class="d-flex align-items-center"> <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M29.652 7.39144L29.504 7.36033L29.4741 7.50857L29.2384 8.67693C26.3803 3.85725 21.2671 0.85 15.6162 0.85C9.11776 0.85 3.32664 4.81807 0.860818 10.9539L0.805752 11.0909L0.941902 11.1481L2.24123 11.694L2.38168 11.753L2.4385 11.6117C4.64365 6.12713 9.816 2.58578 15.6162 2.58578C20.601 2.58578 25.1171 5.20359 27.6886 9.42012L26.6774 8.93752L26.5397 8.8718L26.4763 9.01063L25.8823 10.3123L25.8211 10.4465L25.9542 10.51L29.2206 12.0688C29.2207 12.0688 29.2208 12.0689 29.2209 12.0689C29.3354 12.124 29.4598 12.15 29.584 12.15C29.7155 12.15 29.8459 12.1185 29.9657 12.0581L29.9665 12.0577C30.2015 11.9376 30.3666 11.716 30.4179 11.4578C30.4179 11.4577 30.4179 11.4576 30.4179 11.4576L31.147 7.85788L31.1766 7.71194L31.0309 7.68131L29.652 7.39144Z" fill="currentColor" stroke="black" stroke-width="0.3"/> <path d="M1.99465 19.9428C1.76749 20.0637 1.60702 20.2855 1.55768 20.5424C1.55766 20.5425 1.55764 20.5426 1.55762 20.5427L0.852796 24.1422L0.824596 24.2862L0.967957 24.3175L2.29965 24.6087L2.44955 24.6415L2.47892 24.4909L2.70424 23.3356C5.46844 28.1464 10.4086 31.15 15.8704 31.15C22.1576 31.15 27.7567 27.1805 30.1398 21.0451L30.192 20.9107L30.0598 20.8532L28.8037 20.3074L28.6606 20.2452L28.6041 20.3907C26.4731 25.8749 21.4737 29.413 15.8717 29.413C11.058 29.413 6.69446 26.7987 4.20814 22.5836L5.17478 23.0608L5.31521 23.1301L5.37842 22.9868L5.95263 21.6852L6.01064 21.5537L5.88174 21.4902L2.7236 19.9326L2.72349 19.9325C2.49328 19.8192 2.2236 19.8227 1.99541 19.9424L1.99541 19.9424L1.99465 19.9428Z" fill="currentColor" stroke="black" stroke-width="0.3"/> <path d="M10.3443 19.2454C10.7772 22.6951 12.9963 24.3986 15.1085 24.9251V27.0787V27.2287H15.2585H16.6732H16.8232V27.0787V25.1091C19.0497 25.0487 20.9101 23.848 21.4309 22.0008L21.4309 22.0006C21.7109 21.004 21.729 20.151 21.5525 19.4122C21.376 18.6733 21.0072 18.058 20.5279 17.5337C19.5785 16.495 18.1842 15.8028 16.9687 15.1994L16.9545 15.1924L16.9544 15.1923C16.7012 15.067 16.4299 14.9456 16.1518 14.8212L16.1144 14.8045L16.1144 14.8044C14.7198 14.1813 13.3742 13.5697 13.0246 12.0792C12.7977 11.1058 12.9604 10.2025 13.444 9.59062C13.9489 8.95421 14.8109 8.60205 15.9652 8.60205C17.1894 8.60205 18.0456 9.24987 18.6073 9.92515C19.1703 10.6018 19.426 11.2937 19.4439 11.3437L19.4942 11.485L19.6355 11.4347L20.3017 11.1975L20.3021 11.1974L20.9671 10.9628L21.1084 10.913L21.0587 10.7716C21.0305 10.6915 20.7235 9.851 20.0352 8.97316C19.3654 8.11893 18.326 7.21919 16.8232 6.9637V4.92139V4.77139H16.6732H15.2585H15.1085V4.92139V6.9412C13.5318 7.14248 12.6129 7.88222 12.1023 8.52547L12.1023 8.52555C11.2799 9.56323 11.0145 11.0027 11.3578 12.4689C11.9028 14.7989 13.8754 15.6797 15.3985 16.3599L15.416 16.3677L15.4161 16.3677C15.6882 16.4891 15.9496 16.6066 16.1918 16.7264C17.581 17.4156 18.6518 18.0021 19.2908 18.7268C19.6067 19.085 19.8144 19.4746 19.9019 19.926C19.9897 20.3788 19.9585 20.904 19.7808 21.5354L19.7808 21.5355C19.4519 22.7057 17.9984 23.513 16.2763 23.3851C15.3751 23.3179 14.4124 22.9811 13.6286 22.2886C12.8468 21.5979 12.2345 20.5456 12.0433 19.0306L12.0245 18.8817L11.8757 18.9006L10.4743 19.0779L10.3257 19.0967L10.3443 19.2454Z" fill="currentColor" stroke="curr" stroke-width="0.3"/> </svg> <p class="h6 mb-0 ml-3">保証と返品</p> </a> </div> <div class="border-left mx-5"></div> <div> <a href="#" class="d-flex align-items-center"> <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.9998 29.3332C23.3636 29.3332 29.3332 23.3636 29.3332 15.9998C29.3332 8.63604 23.3636 2.6665 15.9998 2.6665C8.63604 2.6665 2.6665 8.63604 2.6665 15.9998C2.6665 23.3636 8.63604 29.3332 15.9998 29.3332Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M16 16V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M16 22.3335H16.0133" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M16 16C17.6569 16 19 14.6569 19 13C19 11.3431 17.6569 10 16 10C14.3431 10 13 11.3431 13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> <p class="h6 mb-0 ml-3">よくある質問</p> </a> </div> <div class="border-left mx-5"></div> <div> <a href="#" class="d-flex align-items-center"> <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.66667 11H6.87778C3.63157 11 1 13.6117 1 16.8333C1 20.055 3.63157 22.6667 6.87778 22.6667H8.66667V11Z" stroke="currentColor" stroke-width="2"/> <path d="M23.3333 11H25.1222C28.3684 11 31 13.6117 31 16.8333C31 20.055 28.3684 22.6667 25.1222 22.6667H23.3333V11Z" stroke="currentColor" stroke-width="2"/> <path d="M6 11V10.7619C6 5.37055 10.3279 1 15.6667 1C21.0054 1 25.3333 5.37055 25.3333 10.7619V11" stroke="currentColor" stroke-width="2"/> <path d="M25.3332 22.6668C24.1169 25.3708 21.6759 27.466 18.6665 28.3335" stroke="currentColor" stroke-width="2"/> <circle cx="15.9998" cy="28.3333" r="2.33333" stroke="currentColor" stroke-width="2"/> </svg> <p class="h6 mb-0 ml-3">お問い合わせ</p> </a> </div> </div> </div> </nav> </header> 
   <main>
-    <section class="py-5 bg-gray vh-lg-100" style="background-image:url('http://62.234.217.81/images/single/banner.png');background-position: bottom;background-repeat: no-repeat;">
+    <section class="py-5 bg-gray vh-lg-100 d-flex align-items-center" style="background:url('./images/single/banner.png') bottom no-repeat;max-height:890px;">
       <div class="container py-5">
         <div class="row pt-lg-5">
           <div class="col-lg-7 pt-lg-5 pr-lg-5 text-lg-right">
-            <img src="http://62.234.217.81/images/single/pic-1.png" alt="">
+            <img src="./images/single/pic-1.png" alt="">
           </div>
           <div class="col-lg-5 pt-lg-5">
             <h3 class="text-primary">Bluetti EB70</h3>
-            <h1 class="text-primary mb-3">インテリアの雰囲気を壊さないポータブル電源</h1>
-            <h4 class="text-muted mb-5">インテリアの雰囲気を壊さないポータブル電源</h4>
+            <h1 class="text-primary mb-3">性能とデザインを両立するポータブル電源</h1>
+            <h4 class="text-muted mb-5">700Wh／700W のBluetti EB70は従来のポータブル電源と違い、おしゃれなのに、実用性抜群！</h4>
             <a href="#" class="btn btn-lg btn-danger">30%OFFでゲット</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="py-5 vh-lg-100" style="background:url('http://62.234.217.81/images/single/bg-1.png') bottom no-repeat;">
+    <section class="py-5 vh-lg-100" style="background:url('./images/single/bg-1.png') bottom no-repeat;max-height: 1047px;">
       <div class="container py-lg-5">
         <div class="row align-items-center">
           <div class="col-lg-5 py-3 pr-lg-5">
-            <h2 class="h1 text-primary mb-4">性能を確保する上に、美的なニーズにも対応</h2>
-            <p class="text-muted h6 mb-3">テクノロジー感覚あふれるメタリックグレーとファッション感覚あふれる椿レッドの2色から選べます。控えめな寒さでも明るくいきいきとしても、室内外の美しさのニーズにいつでも応えます。</p>
-            <p class="text-primary h6 mb-3">* 特別限定シルバーバージョンもご予約いただけます！</p>
-            <p class="text-muted h6 mb-4">今日の時代、エネルギー貯蔵電池は機能要件を</p>
-            <p class="text-secondary h4 mb-3">Bluetti EB70</p>
-            <p class="text-secondary h4">充電、写真、ビデオの撮影、より多くのニーズに対応</p>
+            <h2 class="h1 text-primary mb-4">性能を確保する上に、<br>美的なニーズにも対応</h2>
+            <p class="text-muted h6 mb-3">
+              3つの色を選択可能です。<br>
+              ・ハイテク感溢れるスチールグレー<br>
+              ・おしゃれで鮮やかなカーマイン<br>
+              ・優雅で明るいミントグリーン<br>
+              お好きなインテリアスタイルに合わせて選べます。
+            </p>
+            <p class="text-muted h6 mb-3">
+              今現在のポータブル電源は<br>
+              性能が優れるだけで満足できません。<br>
+              美的なニーズにも対応すべきです。
+            </p>
+            <p class="text-muted h6 mb-3">
+              Bluetti EB70<br>
+              性能とデザインが両立するポータブル電源
+            </p>
           </div>
           <div class="col-lg-7 py-3">
             <div class="video-wrap" data-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
-              <img src="http://62.234.217.81/images/single/video-bg.jpg" alt="">
+              <img src="./images/single/video-bg.jpg" alt="">
               <a href="#" class="play-btn">
                 <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle opacity="0.2" cx="48" cy="48" r="46" fill="white" stroke="white" stroke-width="4"/>
@@ -119,15 +132,20 @@
     </section>
     <section class="py-5 text-center">
       <div class="container py-lg-5">
-        <h1 class="text-primary mb-4">700Whの容量、700Wの定格電力<br/>小型だけど、必要な機能を完備</h1>
+        <h2 class="text-primary mb-4 h1">716Wh/700W<br/>小型だけど、必要な機能完備</h2>
         <p class="text-muted mb-5">
-          700W固定フレーム出力のBluetii EB70<br/>
-          300Wh-700Whの中小エネルギー蓄電池に特に優れています<br/>
-          700Wは、より多くの種類のアプライアンスを使用できることを意味します<br/>
-          車の冷蔵庫、32インチテレビ、プロジェクター、電気炊飯器、電子レンジ、ヘアドライヤー<br/>
-          EB70を使用すると、どこにいても現代生活を楽しむことができます
+          従来の700Whのポータブル電源と違い<br>
+          Bluetti EB70は定格出力700Wです。<br>
+          700Wっていうことは、<br>
+          対応できる家電とデバイスが一気に増えます。<br>
+          車載冷蔵庫、<br>
+          35インチのテレビ、<br>
+          投影機、<br>
+          ミニドライヤー、<br>
+          ……<br>
+          Bluetti EB70を持ち歩けば、どこでもモーデンライフを過ごせる
         </p>
-        <img src="http://62.234.217.81/images/single/pic-2.png" alt="">
+        <img src="./images/single/pic-2.png" alt="">
         <div class="row pt-5">
           <div class="col py-3">
             <svg width="68" height="118" viewBox="0 0 68 118" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -222,59 +240,104 @@
         </div>
       </div>
     </section>
-    <section class="py-5 text-white" style="background:url('http://62.234.217.81/images/single/bg-2.png') bottom no-repeat;">
-      <div class="container py-lg-5">
-        <div class="row">
-          <div class="col-lg-5 pt-lg-5 h6">
-            <h2 class="h1 mb-4">瞬間最大<span class="text-warning">1400W</span><br/>防災からキャンプまで、<br/>電力需要にほぼ全対応</h2>
-            <p class="mb-0">瞬間最大電力が1400Wであるため、他の中小規模のポータブル電源では使用できません。</p>
-            <p>市場に出回っている300-700Whのポータブル電源の場合、最大瞬時最大値は通常1200Wを超えず、約1000Wがより一般的です。</p>
-            <p>しかし、Bluetti EB70は異なります1400Wの瞬時最大電力は、より多くの家電製品に対応できることを意味します</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5">
-      <div class="container py-lg-5">
-        <div class="row align-items-center border-bottom no-gutters">
-          <div class="col-lg-7 py-3">
-            <img src="http://62.234.217.81/images/single/pic-3.png" alt="">
+    <section class="pb-5">
+      <div class="container pb-lg-5">
+        <div class="row align-items-center border-bottom">
+          <div class="col-lg-7 py-3 py-lg-0">
+            <img src="./images/single/pic-3.png" alt="">
           </div>
           <div class="col-lg-5 py-3">
-            <h2 class="h1 text-primary mb-4">最大12台のデバイスを同時に充電できます。小さいながら、複数の人のニーズを満たすことができます</h2>
-            <p class="h6 text-muted">LED非常灯に加えて、4つのACソケット、7つのDCソケット総消費電力が700W以内の場合、最大12台のデバイスの充電ニーズを満たすことができます。巨大なエネルギー貯蔵バッテリーでキャンプに行くことはありませんこれで十分！</p>
+            <h2 class="h1 mb-4"><span class="text-warning">最大12台</span>の設備に同時充電<br/>防災からキャンプまで、<br/>電力需要にほぼ全対応</h2>
+            <p class="mb-0">
+              ACアダブターに対応することはもちろん、<br>
+              DC、USB-A、USB-C、ワイアレス充電も対応します。<br>
+              USB-Cの場合、2つとも100WのPD3.0充電に対応しますので、<br>
+              iPhone 12などスマホの充電がもっと快適になれます。
+            </p>
+			      <p class="mb-0">また、AC出力、DC出力、LED応急照明のスイッチが個別にコントロールできますので、省エネルギーの面でもお役に立てます。</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="py-5 text-center" id="feature-1" style="background:url('http://62.234.217.81/images/single/bg-3.jpg') bottom no-repeat;">
+    <section id="feature-0" class="py-5 text-white">
       <div class="container py-lg-5">
-        <h4 class="text-muted mb-5">3つの充電モードが完了し、ソーラー充電は最大120Wまで可能</h4>
+        <div class="row">
+          <div class="col-lg-5 pt-lg-5 pb-4 h6">
+            <h2 class="h1 mb-4"><span class="text-warning">エコ</span>をいつも心得に<br/>Bluetti特有のエコモード</h2>
+            <p class="mb-0">
+              Bluettiは地球に優しい製品を制作することを目標として、<br>
+              日々努力しています。<br>
+              EB70はBluetti特有のエコモードを搭載しますので、<br>
+              環境にやさしい省エネルギーを実現可能です。<br><br>
+              一般のポータブル電源なら、AC出力をOFFにしないと、<br>
+              アダプターをささなくても電力を消耗し続きます。<br>
+              Bluetti EB70の場合、エコモードに入ると、<br>
+              もし四時間内ACの出力は20W以下のままの場合、<br>
+              システムが自動的にAC出力をOFFにします。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container py-lg-5">
+        <div class="row align-items-center border-bottom">
+          <div class="col-lg-6 py-3">
+            <img src="./images/product/product-pic-10.png" alt="">
+          </div>
+          <div class="col-lg-6 py-3 pr-lg-5">
+            <h2 class="h1 text-primary mb-4">純正弦波出力で、<br>お使いの家電をもっと大切に</h2>
+            <h6 class="text-primary">正弦波とは？</h6>
+            <p class="text-muted">電力信号の形と形態は波形です。一般的には正弦波、矩形波、三角波、鋸刃波、4つがあり、中に最も単一な信号は正弦波です。ですので、ほぼすべての家電は正弦波に対応します。他の波形だと、対応できない家電がいろいろあります。矩形波の場合、対応できる家電も多いですが、ケーブルの発・老化が発生しやすいし、漏電の恐れもありますので、安全の面でおすすめしません。</p>
+            <h6 class="text-primary">純正弦波とは？修正波の実態は？</h6>
+            <p class="text-muted">現在、電源を売る店でよく「純正弦波」と「修正波」の単語が見れますが、実際、「純正弦波」は普通の「正弦波」で、いわゆる「修正波」は矩形波の一種の形態です。っｘ</p>
+            <h6 class="text-primary">ポータブル電源Bluetti EB70は純正弦波</h6>
+            <p class="text-muted">Bluetti EB70は純正弦波で、お使いの家電を安心・安全に給電します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 text-center" id="feature-1" style="background:url('./images/single/bg-3.jpg') bottom no-repeat;">
+      <div class="container py-lg-5">
+        <h2 class="text-primary mb-4">4つの充電モードがあり、AC充電は約3.75時間で満タン！</h2>
+        <h4 class="text-muted mb-5">充電中にデバイスを給電することも可能！</h4>
         <div class="row pb-lg-5">
-          <div class="col-lg-4 py-3 pb-lg-5">
+          <div class="col-lg-3 py-3 pb-lg-5">
             <div class="wrap">
-              <img src="http://62.234.217.81/images/single/pic-4.png" alt="">
+              <img src="./images/single/pic-5.png" alt="">
               <div class="content">
-                <h4 class="text-primary mb-3">25V以内のソーラーパネル（1個、最大サポート120W）</h4>
-                <p class="text-muted text-left">LED非常灯に加えて、4つのACソケット、7つのDCソケット</p>
+                <h4 class="text-primary mb-3">AC充電</h4>
+                <p class="text-muted text-left">200Wで充電できるので、およそ3.75時間で満タン<br>アダプターもファン付き’ですので、安全・安心で充電可能</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 py-3 pb-lg-5">
+          <div class="col-lg-3 py-3 pb-lg-5">
             <div class="wrap">
-              <img src="http://62.234.217.81/images/single/pic-5.png" alt="">
+              <img src="./images/single/pic-4.png" alt="">
               <div class="content">
-                <h4 class="text-primary mb-3">25V以内のソーラーパネル（1個、最大サポート120W）</h4>
-                <p class="text-muted text-left">LED非常灯に加えて、4つのACソケット、7つのDCソケット</p>
+                <h4 class="text-primary mb-3">太陽光充電</h4>
+                <p class="text-muted text-left">12-28V8Aのソーラーパネルで充電可能<br>MPPTコントローラーで太陽光充電の転換率が一般より高し</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 py-3 pb-lg-5">
+          <div class="col-lg-3 py-3 pb-lg-5">
             <div class="wrap">
-              <img src="http://62.234.217.81/images/single/pic-6.png" alt="">
+              <img src="./images/single/pic-6.png" alt="">
               <div class="content">
-                <h4 class="text-primary mb-3">25V以内のソーラーパネル（1個、最大サポート120W）</h4>
-                <p class="text-muted text-left">LED非常灯に加えて、4つのACソケット、7つのDCソケット</p>
+                <h4 class="text-primary mb-3">カー充電</h4>
+                <p class="text-muted text-left">
+                  製品同梱のカーチャージケーブルを使って、運転中にも充電可能<br>
+                  曇天や雨の日も、外出中の電気補充がばっちり
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 py-3 pb-lg-5">
+            <div class="wrap">
+              <img src="./images/single/pic-6.png" alt="">
+              <div class="content">
+                <h4 class="text-primary mb-3">発電機充電</h4>
+                <p class="text-muted text-left">発電機よりの充電も可能<br>発電機は屋内で使えないため、発電機より快速充電して、屋内の停電対策にピッタリ</p>
               </div>
             </div>
           </div>
@@ -282,29 +345,22 @@
       </div>
     </section>
     <section class="py-5">
-      <div class="container py-lg-5">
+      <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3">
-            <img src="http://62.234.217.81/images/single/pic-7.png" alt="">
+            <img src="./images/single/pic-7.png" alt="">
           </div>
           <div class="col-lg-6 py-3">
-            <h2 class="h1 text-primary mb-4">その充放電サイクル回数は驚異の約2500回です</h2>
-            <h6 class="text-muted">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。一般的なコアは、循環充電回数が1000回前後というだけでなく、損失率も非常に高いです。</h6>
-          </div>
-          <div class="py-5 w-100 d-none d-lg-block"></div>
-          <div class="col-lg-6 py-3 pr-lg-5">
-            <h2 class="h1 text-primary mb-4">純正弦波出力で、お客様の家電を大切にします。</h2>
-            <h6 class="text-primary">何が正弦波ですか？</h6>
-            <p class="text-muted">わたしたちの生活にとって電気は必要不可欠です。長い間、電気は安定供給されるのが当たり前と考えられていましたが、2011年の東日本大震災と2018年の北海道胆振東部地震後の経験は、ポータブル電源の世界的ブランドBLUETTIの製品開発にも大きな影響を与えることとなります。北海道の震災によるブラックアウト時の意見を取り入れて、強靭なボディーと抜群の機動性を持つポータブル電源「EB150」を開発しました。</p>
-            <h6 class="text-primary">何が正弦波ですか？</h6>
-            <p class="text-muted">わたしたちの生活にとって電気は必要不可欠です。長い間、電気は安定供給されるのが当たり前と考えられていましたが、2011年の東日本大震災と2018年の北海道胆振東部地震後の経験は、ポータブル電源の世界的ブランドBLUETTIの製品開発にも大きな影響を与えることとなります。北海道の震災によるブラックアウト時の意見を取り入れて、強靭なボディーと抜群の機動性を持つポータブル電源「EB150」を開発しました。</p>
-          </div>
-          <div class="col-lg-6 py-3">
-            <img src="http://62.234.217.81/images/product/product-pic-10.png" alt="">
+            <h2 class="h1 text-primary mb-4">充放電サイクル回数は驚異の2500回以上</h2>
+            <p class="text-muted">Bluetti EB70は内蔵バッテリーはリン酸鉄リチウムを採用することで、電源のライフサイクルは2500回以上となります。
+            </p>
+            <h6 class="text-primary">リン酸鉄リチウムとは？</h6>
+            <p class="text-muted">過去に爆発·発火事故をたまに起こすコバルト系、ポリマー系、三元系のリチウムイオン電池と違い、リン酸鉄リチウムイオン電池のエネルギー密度が低いため、過充電·過放電の状態になっても爆発しない、今まで最も安全の電池です。<br>
+              そのため、世界中の大手電気自動車制作会社は次々とリン酸鉄リチウムを採用し始めました。 </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     <section class="py-5 text-center">
       <div class="container py-lg-5">
         <div id="feature-2" class="p-lg-5 p-3">
@@ -333,9 +389,15 @@
               </g>
             </svg>
           </i>
-          <h2 class="h1 text-primary mb-4">BMSシステムの導 安全・安定・安心</h2>
-          <p class="text-muted mb-5">ポータブル電源『AC200』にはBMS（バッテリーマネージメントシステム）がバッテリー内部に搭載されており、各セル電圧のばらつき制御を行い、バッテリーを安定的に保ちバッテリー寿命を伸ばします。更に安全面において、ポータブル電源本体には、高温保護、過電圧保護、低電圧保護、放電低温度保護、過電流保護、過負荷保護、ショート保護、充電過電圧保護などの設定を施し、皆さまに安心してお使い頂けるよう最善を尽くしております。安心＆安全をモットーに、1000回以上の試験を行いました。</p>
-          <div class="row">
+          <h2 class="h1 text-primary mb-4">BMS搭載<br>安全・安定・安心</h2>
+          <p class="text-muted mb-3 text-left mx-auto" style="max-width: 900px;">
+            ポータブル電源「Bluetti EB70」にもBMS（バッテリーマネージメントシステム）搭載することで、各セル電圧のばらつき制御を行い、バッテリーの安定・安全を確保します。<br>
+            それだけではなく、ポータブル電源Bluetti EB70の本体には、<br>
+            高温保護、過電圧保護、低電圧保護、放電低温度保護、過電流保護、過負荷保護、ショート保護、充電過電圧保護などの設定がありまして、<br>
+            皆様が安全・安心にお使いことが可能です。<br>
+          </p>
+          <a style="color: #001b6a" href="#" target="_blank" title="連続定電圧充電時の安全試験、運搬中の振動時の安全試験、高温下での組電池容器の安全試験、温度変化時の安全試験、外部短絡時の安全試験、落下時の安全試験、衝撃時の安全試験、異常高温時の安全試験、圧壊時の安全試験、低圧時の安全試験、過充電時の安全試験、強制放電時の安全試験、過充電の保護機能試験、機器落下時の組電池の安全試験">＊1000回以上の試験済みです。</a>
+          <div class="row mt-4">
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -348,7 +410,6 @@
                 </svg>
               </i>
               <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -358,8 +419,7 @@
                   <path d="M28.3333 44.7857L42.5863 20.8334V35.2144H51.6666L37.4135 59.1667V44.7857H28.3333Z" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">過充電保護</h4>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -369,8 +429,7 @@
                   <path d="M29.1667 26.6666V42.5C29.1667 48.4831 34.017 53.3333 40.0001 53.3333V53.3333C45.9832 53.3333 50.8334 48.483 50.8334 42.5V26.6666" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">過電圧保護</h4>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -384,8 +443,7 @@
                   <path d="M43.3333 30H52.4999" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">高温保護</h4>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -398,8 +456,7 @@
                   <path d="M50.0001 20.8334L41.6667 34.1667" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">過負荷保護</h4>
             </div>
             <div class="col-lg-4 px-lg-4 py-3">
               <i>
@@ -409,8 +466,7 @@
                   <path d="M40 73.3333C40 73.3333 66.6667 60 66.6667 40V16.6666L40 6.66663L13.3334 16.6666V40C13.3334 60 40 73.3333 40 73.3333Z" stroke="#001B6A" stroke-width="3"/>
                 </svg>
               </i>
-              <h4 class="text-muted my-3">ショート保護</h4>
-              <p class="h6 text-muted">ソーラーからの不安定な電気は内蔵のMPPT回路によって最適動作点を追従し、常にソーラーパネルからの最大電力を効率よく充電することができます。</p>
+              <h4 class="text-muted my-3">過電流保護</h4>
             </div>
           </div>
         </div>
@@ -420,15 +476,15 @@
       <div class="container-sm">
         <div class="row">
           <div class="col-lg-6">
-            <h2 class="h1 text-primary mb-5">その充放電サイクル回数は驚異の約2500回です</h2>
-            <p class="text-muted h6 mb-5">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。 一般的なコアは、循環充電回数が1000回前後というだけでなく、損失率も非常に高いです。</p>
+            <h2 class="h1 text-primary mb-5">Bluetti EB70<br>ハッピーライフを応援する</h2>
+            <p class="text-muted h6 mb-5">電気のある生活は現代人に対して極めて重要なことです。アウトドアライフを安全安心かつ快適に過ごすには、ポータブル電源が不可欠の道具です。</p>
             <div class="row no-gutters pt-lg-5">
               <div class="col-lg-5 py-2 pr-lg-3">
-                <img class="mb-3 w-100" src="http://62.234.217.81/images/single/pic-8.jpg" alt="">
-                <img class="w-100" src="http://62.234.217.81/images/single/pic-9.jpg" alt="">
+                <img class="mb-3 w-100" src="./images/single/pic-8.jpg" alt="">
+                <img class="w-100" src="./images/single/pic-9.jpg" alt="">
               </div>
               <div class="col-lg-7 py-2">
-                <div class="p-4 h-100" style="background-image:url('http://62.234.217.81/images/single/bg-4.jpg');background-size: cover;background-position: right bottom;background-repeat: no-repeat;">
+                <div class="p-4 h-100" style="background-image:url('./images/single/bg-4.jpg');background-size: cover;background-position: right bottom;background-repeat: no-repeat;">
                   <i>
                     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M78 54L65 30H32L17.5 54H22V76H75V54H78Z" fill="#D1C6F4"/>
@@ -446,7 +502,7 @@
                     </svg>
                   </i>
                   <p class="h1 text-muted mb-3 mt-5">家庭防災</p>
-                  <p class="h6 text-muted">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。</p>
+                  <p class="h6 text-muted">地震・津波・台風などの悪気候より、停電に遭う場合、最低限の電力提供することより、通信設備や必要な家電の利用を確保します。</p>
                 </div>
               </div>
             </div>
@@ -454,11 +510,11 @@
           <div class="col-lg-6 pt-lg-5">
             <div class="row no-gutters my-lg-5">
               <div class="col-lg-5 py-2 pr-lg-3">
-                <img class="mb-3 w-100" src="http://62.234.217.81/images/single/pic-10.jpg" alt="">
-                <img class="w-100" src="http://62.234.217.81/images/single/pic-11.jpg" alt="">
+                <img class="mb-3 w-100" src="./images/single/pic-10.jpg" alt="">
+                <img class="w-100" src="./images/single/pic-11.jpg" alt="">
               </div>
               <div class="col-lg-7 py-2">
-                <div class="p-4 h-100" style="background-image:url('http://62.234.217.81/images/single/bg-5.jpg');background-size: cover;background-position: right bottom;background-repeat: no-repeat;">
+                <div class="p-4 h-100" style="background-image:url('./images/single/bg-5.jpg');background-size: cover;background-position: right bottom;background-repeat: no-repeat;">
                   <i>
                     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M61.8182 49L80 80H48H29.5H11L29.8182 49H61.8182Z" fill="#EFE5B1"/>
@@ -472,14 +528,14 @@
                       <path d="M4.23253 33.6772C5.81025 20.5977 10.8064 14.4426 13.1072 13C15.9011 14.4426 20.5 20.5 21.9819 33.6772C23.4442 46.6807 16.2298 47.7825 13.1072 46.6605C9.49159 47.7825 2.65481 46.7567 4.23253 33.6772Z" stroke="#001B6A" stroke-width="3"/>
                     </svg>
                   </i>
-                  <p class="h1 text-muted mb-3 mt-5">家庭防災</p>
-                  <p class="h6 text-muted">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。</p>
+                  <p class="h1 text-muted mb-3 mt-5">キャンプ</p>
+                  <p class="h6 text-muted">アウトドア生活を楽しむとき、Bluetti EB70があれば、デジタル製品の充電も、電気毛布などの使用も、もっと便利になれます。</p>
                 </div>
               </div>
             </div>
             <div class="row no-gutters">
               <div class="col-lg-7 py-2">
-                <div class="p-4 h-100" style="background-image:url('http://62.234.217.81/images/single/bg-6.jpg');background-size: contain;background-position: right bottom;background-repeat: no-repeat;background-color: #FEEBEE;">
+                <div class="p-4 h-100" style="background-image:url('./images/single/bg-6.jpg');background-size: contain;background-position: right bottom;background-repeat: no-repeat;background-color: #FEEBEE;">
                   <i>
                     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 44H68C78 44 80 55 79 58.5L77 66L75 73.5H35.5H13V65L18 58.5H7L16 44Z" fill="#FCC6D0"/>
@@ -499,39 +555,49 @@
                       <path d="M76 12.5072L77.484 12.7261L77.818 10.461L75.608 11.0594L76 12.5072ZM65.3071 3L66.7911 3.21884L67.1251 0.953812L64.9151 1.55212L65.3071 3ZM75.608 11.0594C75.0211 11.2183 74.4022 11.3035 73.7612 11.3035V14.3035C74.6694 14.3035 75.5518 14.1826 76.392 13.9551L75.608 11.0594ZM73.7612 11.3035C69.8698 11.3035 66.7152 8.14891 66.7152 4.25755H63.7152C63.7152 9.80577 68.2129 14.3035 73.7612 14.3035V11.3035ZM66.7152 4.25755C66.7152 3.9038 66.7412 3.55703 66.7911 3.21884L63.8232 2.78116C63.752 3.26379 63.7152 3.75684 63.7152 4.25755H66.7152ZM60.5 11.2497C60.5 7.99913 62.7025 5.25916 65.6991 4.44788L64.9151 1.55212C60.644 2.70846 57.5 6.60999 57.5 11.2497H60.5ZM67.5459 18.2956C63.6546 18.2956 60.5 15.141 60.5 11.2497H57.5C57.5 16.7979 61.9977 21.2956 67.5459 21.2956V18.2956ZM74.5161 12.2884C74.0149 15.6868 71.0837 18.2956 67.5459 18.2956V21.2956C72.5933 21.2956 76.7689 17.5748 77.484 12.7261L74.5161 12.2884Z" fill="#001B6A"/>
                     </svg>
                   </i>
-                  <p class="h1 text-muted mb-3 mt-5">家庭防災</p>
-                  <p class="h6 text-muted">リン酸鉄のリチウム電気芯を採用して、循環充電は3000回以上で、総容量は80%まで下がることができます。</p>
+                  <p class="h1 text-muted mb-3 mt-5">車中泊</p>
+                  <p class="h6 text-muted">改造車でも、キャンピングカーでも、一台のBluetti EB70があれば、もっと安心・快適な車中泊ライフが過ごせます。</p>
                 </div>
               </div>
               <div class="col-lg-5 py-2 pl-lg-3">
-                <img class="mb-3 w-100" src="http://62.234.217.81/images/single/pic-12.jpg" alt="">
-                <img class="w-100" src="http://62.234.217.81/images/single/pic-13.jpg" alt="">
+                <img class="mb-3 w-100" src="./images/single/pic-12.jpg" alt="">
+                <img class="w-100" src="./images/single/pic-13.jpg" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <a href="#">
-        <img class="w-100" src="http://62.234.217.81/images/single/coupon.png" alt="">
-      </a>
+    <section class="text-center text-lg-left pb-5 pb-lg-0" style="background-color: #FEF3E6;" id="discount">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <img class="discount-pic" src="./images/single/discount.svg" alt="">
+          </div>
+          <div class="col-lg-7 pb-4 pb-lg-0">
+            <h2 class="text-huge text-primary">CAMPFIRE 絶賛予約中</h2>
+          </div>
+          <div class="col-lg-2">
+            <a href="#" class="btn btn-danger btn-lg">今すぐ予約</a>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="product-detail" class="py-5 text-center">
       <div class="container-sm py-lg-4">
-        <h2 class="h1 text-primary my-5">製品の規格は他社と比較する</h2>
+        <h2 class="h1 text-primary my-5">製品の規格・他社製品と比較</h2>
         <div class="table-responsive">
           <table class="table table-bordered text-muted table-custom">
             <tbody>
               <tr class="bg-light">
-                <td class="text-left">Product</td>
+                <td class="text-left">製品名</td>
                 <td class="text-dark">
                   <img src="/images/product/product-bt.png" alt="">
-                  <p class="h5">AC 200</p>
+                  <p class="h5">Bluetti EB70</p>
                 </td>
                 <td class="text-dark">
                   <img src="/images/product/product-other-2.png" alt="">
-                  <p class="h5">ポータブル電源 700</p>
+                  <p class="h5">A社ポータブル電源</p>
                 </td>
                 <td class="text-dark">
                   <img src="/images/product/product-other.png" alt="">
@@ -543,35 +609,67 @@
                 </td>
               </tr>
               <tr>
-                <td class="text-left">Battery Type</td>
-                <td class="text-info">Battery Type</td>
-                <td>LG,EV-grade Lithium-ion</td>
-                <td>LG,EV-grade Lithium-ion</td>
-                <td>LG,EV-grade Lithium-ion</td>
+                <td class="text-left">内蔵バッテリー<br>リン酸鉄リチウム</td>
+                <td class="text-info">○</td>
+                <td>☓</td>
+                <td>☓</td>
+                <td>☓</td>
               </tr>
               <tr class="bg-light">
-                <td class="text-left">Capacity</td>
-                <td class="text-info">1700Wh</td>
-                <td>1700Wh</td>
+                <td class="text-left">容量</td>
+                <td class="text-info">716Wh</td>
+                <td>700Wh</td>
                 <td>1700Wh</td>
                 <td>1700Wh</td>
               </tr>
               <tr>
-                <td class="text-left">Battery Type</td>
-                <td class="text-info">Battery Type</td>
-                <td>LG,EV-grade Lithium-ion</td>
+                <td class="text-left">定格出力</td>
+                <td class="text-info">700W</td>
+                <td>500W</td>
                 <td>LG,EV-grade Lithium-ion</td>
                 <td>LG,EV-grade Lithium-ion</td>
               </tr>
               <tr class="bg-light">
-                <td class="text-left">Capacity</td>
-                <td class="text-info">1700Wh</td>
-                <td>1700Wh</td>
+                <td class="text-left">瞬間最大出力</td>
+                <td class="text-info">1,400W</td>
+                <td>1,000W</td>
                 <td>1700Wh</td>
                 <td>1700Wh</td>
               </tr>
               <tr>
-                <td class="text-left">MPPT Charge</td>
+                <td class="text-left">MPPTコントローラー</td>
+		        <td class="text-info">○</td>
+                <td>○</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr><tr class="bg-light">
+			    <td class="text-left">最短充電時間</td>
+				       <td class="text-info">約3.75時間</td>
+                <td>約8.5時間</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr>
+				<tr>
+			    <td class="text-left">充電温度</td>
+				       <td class="text-info">0−40℃</td>
+                <td>0−40℃</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr>
+				<tr class="bg-light">
+			    <td class="text-left">動作温度</td>
+				       <td class="text-info">−20℃−40℃</td>
+                <td>−10℃−40℃</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr>
+				<tr>
+			    <td class="text-left">同時給電可能の<br>最大デバイス数</td>
+				       <td class="text-info">12</td>
+                <td>8</td>
+                <td>☓</td>
+                <td>☓</td>
+              </tr>
                 <td class="text-info">
                   <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
@@ -598,16 +696,26 @@
         </div>
       </div>
     </section>
+    <section class="text-center">
+      <div class="container">
+        <div class="share-btn" data-url="https://www.bluetti.jp/pages/bluetti-eb70-funding" data-title="bluetti-eb70-funding" data-desc="bluetti-eb70-funding">
+          <a class="btn-twitter btn btn-outline-primary" data-id="tw">
+            <svg t="1606030771392" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2738" width="1.5rem" height="1.5rem"><path d="M1024 186.368a410.325333 410.325333 0 0 1-120.618667 33.877333 214.954667 214.954667 0 0 0 92.373334-119.125333 413.781333 413.781333 0 0 1-133.504 52.181333A207.189333 207.189333 0 0 0 708.949333 85.333333c-115.968 0-210.005333 96.426667-210.005333 215.424 0 16.896 1.792 33.28 5.376 49.066667-174.592-9.002667-329.386667-94.72-433.066667-225.152a219.306667 219.306667 0 0 0-28.416 108.373333c0 74.709333 37.12 140.672 93.44 179.328a206.250667 206.250667 0 0 1-95.146666-26.88v2.645334c0 104.405333 72.405333 191.488 168.533333 211.2a200.32 200.32 0 0 1-55.296 7.594666c-13.525333 0-26.752-1.28-39.552-3.84 26.709333 85.589333 104.277333 147.882667 196.224 149.546667A414.805333 414.805333 0 0 1 0 841.941333 584.96 584.96 0 0 0 322.048 938.666667c386.474667 0 597.76-328.192 597.76-612.906667 0-9.386667-0.213333-18.730667-0.554667-27.904 41.045333-30.378667 76.672-68.266667 104.746667-111.488" fill="#55ACEE" p-id="2739"></path></svg>
+            <span class="ml-1">Twitter</span>
+          </a>
+        </div>
+      </div>
+    </section>
     <section class="py-5 text-center">
-      <div class="container-sm py-lg-5" style="background:url('http://62.234.217.81/images/single/bg-7.png') center no-repeat;background-size: contain;">
+      <div class="container-sm py-lg-5" style="background:url('./images/single/bg-7.png') center no-repeat;background-size: contain;">
         <div class="py-lg-5">
           <h3 class="text-muted mb-4">Bluetti EB70</h3>
-          <h2 class="text-primary h1 mb-5">実用性と美観性が両立する<br/>ポータブル電源</h2>
-          <a href="#" class="btn btn-lg btn-danger">30%OFFでゲット</a>
+          <h2 class="text-primary h1 mb-5">実用性と美観性が融合する<br/>ポータブル電源</h2>
+          <a href="#" target="_blank" class="btn btn-lg btn-danger">30%OFFでゲット</a>
         </div>
       </div>
     </section>
   </main>
-  <footer> <div class="container"> <div class="row"> <div class="col-lg-6 mb-4 mb-lg-0"> <h5 class="mb-4">企業情報</h5> <ul class="list-unstyled"> <li class="mb-2">会社名：パワーオーク株式会社</li> <li class="mb-2">住所：〒2300051 神奈川県横浜市鶴見区鶴見中央4-29-17</li> <li class="mb-2">TEL：04-5717-5244</li> <li class="mb-2">受け時間：午前09:00時〜午後17:00時 (土曜･日曜･祝日を除く)</li> <li>bluetti.jp@bluetti.com</li> </ul> </div> <div class="col-lg-6"> <div class="row link-inherit"> <div class="col-lg-4"> <details> <summary><h5 class="mb-4">サポート</h5></summary> <ul class="list-unstyled"> <li class="mb-3"><a href="#">保証と返品</a></li> <li class="mb-3"><a href="#">よくある質問</a></li> <li class="mb-3"><a href="#">メディア関係</a></li> <li class="mb-3"><a href="#">お問い合わせ</a></li> </ul> </details> </div> <div class="col-lg-4"> <details> <summary><h5 class="mb-4">イベント情報</h5></summary> <ul class="list-unstyled"> <li class="mb-3"><a href="#">試用</a></li> <li class="mb-3"><a href="#">新規登録割引クーポン</a></li> </ul> </details> </div> <div class="col-lg-4"> <details> <summary><h5 class="mb-4">正規販売店</h5></summary> <ul class="list-unstyled"> <li class="mb-3"><a href="#">Bluettti Japan アマゾン店</a></li> <li class="mb-3"><a href="#">Bluetti Japan 楽天市場店</a></li> <li class="mb-3"><a href="#">Bluetti Japan ヤフー店</a></li> </ul> </details> </div> </div> </div> </div> <hr/> <div class="d-flex align-items-center justify-content-center"> <a href="#" class="mx-3"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M13 1C6.92487 1 2 5.92487 2 12C2 17.4558 5.97189 21.9839 11.1818 22.8504V15H9V12H11.1818V10C11.1818 8.93913 11.5649 7.92172 12.2469 7.17157C12.9288 6.42143 13.8538 6 14.8182 6H17V9.2H14.8182C14.6253 9.2 14.4403 9.28429 14.3039 9.43431C14.1675 9.58434 14.0909 9.78783 14.0909 10V12H17L16.2727 15H14.0909V22.9466C19.6539 22.3989 24 17.707 24 12C24 5.92487 19.0751 1 13 1Z" fill="white"/> </svg> </a> <a href="#" class="mx-3"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM12.4833 8.98924C11.8591 8.89668 11.2217 9.0033 10.6616 9.29392C10.1015 9.58455 9.64727 10.0444 9.36357 10.608C9.07988 11.1717 8.98113 11.8104 9.08138 12.4334C9.18163 13.0564 9.47577 13.6319 9.92196 14.0781C10.3681 14.5243 10.9437 14.8184 11.5667 14.9187C12.1897 15.0189 12.8284 14.9202 13.392 14.6365C13.9557 14.3528 14.4155 13.8986 14.7061 13.3385C14.9968 12.7784 15.1034 12.1409 15.0108 11.5167C14.9164 10.88 14.6197 10.2906 14.1646 9.83547C13.7095 9.38034 13.12 9.08365 12.4833 8.98924ZM9.74043 7.51868C10.6739 7.0343 11.7364 6.85661 12.7767 7.01087C13.8378 7.16823 14.8203 7.6627 15.5788 8.42126C16.3374 9.17981 16.8318 10.1622 16.9892 11.2234C17.1435 12.2637 16.9658 13.3261 16.4814 14.2596C15.997 15.1931 15.2306 15.9501 14.2912 16.423C13.3518 16.8958 12.2873 17.0604 11.2489 16.8933C10.2106 16.7262 9.2514 16.236 8.50774 15.4923C7.76409 14.7487 7.27386 13.7895 7.10678 12.7511C6.9397 11.7128 7.10428 10.6482 7.5771 9.70884C8.04993 8.76944 8.80693 8.00305 9.74043 7.51868ZM17.5 5.5C16.9477 5.5 16.5 5.94772 16.5 6.5C16.5 7.05228 16.9477 7.5 17.5 7.5H17.51C18.0623 7.5 18.51 7.05228 18.51 6.5C18.51 5.94772 18.0623 5.5 17.51 5.5H17.5Z" fill="white"/> </svg> </a> <a href="#" class="mx-3"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23 3.00029C22.0424 3.67577 20.9821 4.1924 19.86 4.53029C19.2577 3.8378 18.4573 3.34698 17.567 3.12422C16.6767 2.90145 15.7395 2.95749 14.8821 3.28474C14.0247 3.612 13.2884 4.19469 12.773 4.95401C12.2575 5.71332 11.9877 6.61263 12 7.53029V8.53029C10.2426 8.57586 8.50127 8.1861 6.93101 7.39574C5.36074 6.60537 4.01032 5.43893 3 4.00029C3 4.00029 -1 13.0003 8 17.0003C5.94053 18.3983 3.48716 19.0992 1 19.0003C10 24.0003 21 19.0003 21 7.50029C20.9991 7.22174 20.9723 6.94388 20.92 6.67029C21.9406 5.66378 22.6608 4.393 23 3.00029Z" fill="white"/> </svg> </a> <a href="#" class="mx-3"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8386 5.15941C22.1792 5.51057 22.4212 5.94541 22.54 6.42C22.8572 8.1787 23.0112 9.96295 23 11.75C23.0063 13.5103 22.8523 15.2676 22.54 17C22.4212 17.4746 22.1792 17.9094 21.8386 18.2606C21.498 18.6118 21.0707 18.8668 20.6 19C18.88 19.46 12 19.46 12 19.46C12 19.46 5.11996 19.46 3.39996 19C2.93878 18.8738 2.51794 18.6308 2.17811 18.2945C1.83827 17.9581 1.59092 17.5398 1.45996 17.08C1.14273 15.3213 0.988741 13.537 0.999961 11.75C0.991197 9.97631 1.14518 8.20556 1.45996 6.46C1.57875 5.98541 1.82068 5.55057 2.16131 5.19941C2.50194 4.84824 2.92921 4.59318 3.39996 4.46C5.11996 4 12 4 12 4C12 4 18.88 4 20.6 4.42C21.0707 4.55318 21.498 4.80824 21.8386 5.15941ZM15.5 11.75L9.74997 15.02V8.47998L15.5 11.75Z" fill="white"/> </svg> </a> </div> <div class="d-flex align-items-center justify-content-center link-inherit mt-4 flex-wrap"> <a href="#">ポータブル電源</a> <span class="mx-3 border-left py-2"></span> <a href="#">モバイルバッテリー</a> <span class="mx-3 border-left py-2"></span> <a href="#">ソーラーパネル</a> <span class="mx-3 border-left py-2"></span> <a href="#">家電商品</a> <span class="mx-3 border-left py-2"></span> <a href="#">企業情報</a> <span class="mx-3 border-left py-2"></span> <a href="#">問い合わせ</a> </div> </div> </footer> 
-<script src="http://62.234.217.81/assets/app.bundle.js"></script></body>
+  <footer> <div class="container"> <div class="row"> <div class="col-lg-6 mb-4 mb-lg-0"> <h5 class="mb-4">企業情報</h5> <ul class="list-unstyled"> <li class="mb-2">会社名：パワーオーク株式会社</li> <li class="mb-2">住所：〒2300051 神奈川県横浜市鶴見区鶴見中央4-29-17</li> <li class="mb-2">TEL：04-5717-5244</li> <li class="mb-2">受け時間：午前09:00時〜午後17:00時 (土曜･日曜･祝日を除く)</li> <li>bluetti.jp@bluetti.com</li> </ul> </div> <div class="col-lg-6"> <div class="row link-inherit"> <div class="col-lg-4"> <details> <summary><h5 class="mb-4">サポート</h5></summary> <ul class="list-unstyled"> <li class="mb-3"><a href="#">保証と返品</a></li> <li class="mb-3"><a href="#">よくある質問</a></li> <li class="mb-3"><a href="#">メディア関係</a></li> <li class="mb-3"><a href="#">お問い合わせ</a></li> </ul> </details> </div> <div class="col-lg-4"> <details> <summary><h5 class="mb-4">イベント情報</h5></summary> <ul class="list-unstyled"> <li class="mb-3"><a href="#">試用</a></li> <li class="mb-3"><a href="#">新規登録割引クーポン</a></li> </ul> </details> </div> <div class="col-lg-4"> <details> <summary><h5 class="mb-4">正規販売店</h5></summary> <ul class="list-unstyled"> <li class="mb-3"><a href="#">Bluettti Japan アマゾン店</a></li> <li class="mb-3"><a href="#">Bluetti Japan 楽天市場店</a></li> <li class="mb-3"><a href="#">Bluetti Japan ヤフー店</a></li> </ul> </details> </div> </div> </div> </div> <hr/> <div class="d-flex align-items-center justify-content-center"> <a href="#" class="mx-3"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M13 1C6.92487 1 2 5.92487 2 12C2 17.4558 5.97189 21.9839 11.1818 22.8504V15H9V12H11.1818V10C11.1818 8.93913 11.5649 7.92172 12.2469 7.17157C12.9288 6.42143 13.8538 6 14.8182 6H17V9.2H14.8182C14.6253 9.2 14.4403 9.28429 14.3039 9.43431C14.1675 9.58434 14.0909 9.78783 14.0909 10V12H17L16.2727 15H14.0909V22.9466C19.6539 22.3989 24 17.707 24 12C24 5.92487 19.0751 1 13 1Z" fill="white"/> </svg> </a> <a href="#" class="mx-3"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM12.4833 8.98924C11.8591 8.89668 11.2217 9.0033 10.6616 9.29392C10.1015 9.58455 9.64727 10.0444 9.36357 10.608C9.07988 11.1717 8.98113 11.8104 9.08138 12.4334C9.18163 13.0564 9.47577 13.6319 9.92196 14.0781C10.3681 14.5243 10.9437 14.8184 11.5667 14.9187C12.1897 15.0189 12.8284 14.9202 13.392 14.6365C13.9557 14.3528 14.4155 13.8986 14.7061 13.3385C14.9968 12.7784 15.1034 12.1409 15.0108 11.5167C14.9164 10.88 14.6197 10.2906 14.1646 9.83547C13.7095 9.38034 13.12 9.08365 12.4833 8.98924ZM9.74043 7.51868C10.6739 7.0343 11.7364 6.85661 12.7767 7.01087C13.8378 7.16823 14.8203 7.6627 15.5788 8.42126C16.3374 9.17981 16.8318 10.1622 16.9892 11.2234C17.1435 12.2637 16.9658 13.3261 16.4814 14.2596C15.997 15.1931 15.2306 15.9501 14.2912 16.423C13.3518 16.8958 12.2873 17.0604 11.2489 16.8933C10.2106 16.7262 9.2514 16.236 8.50774 15.4923C7.76409 14.7487 7.27386 13.7895 7.10678 12.7511C6.9397 11.7128 7.10428 10.6482 7.5771 9.70884C8.04993 8.76944 8.80693 8.00305 9.74043 7.51868ZM17.5 5.5C16.9477 5.5 16.5 5.94772 16.5 6.5C16.5 7.05228 16.9477 7.5 17.5 7.5H17.51C18.0623 7.5 18.51 7.05228 18.51 6.5C18.51 5.94772 18.0623 5.5 17.51 5.5H17.5Z" fill="white"/> </svg> </a> <a href="#" class="mx-3"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23 3.00029C22.0424 3.67577 20.9821 4.1924 19.86 4.53029C19.2577 3.8378 18.4573 3.34698 17.567 3.12422C16.6767 2.90145 15.7395 2.95749 14.8821 3.28474C14.0247 3.612 13.2884 4.19469 12.773 4.95401C12.2575 5.71332 11.9877 6.61263 12 7.53029V8.53029C10.2426 8.57586 8.50127 8.1861 6.93101 7.39574C5.36074 6.60537 4.01032 5.43893 3 4.00029C3 4.00029 -1 13.0003 8 17.0003C5.94053 18.3983 3.48716 19.0992 1 19.0003C10 24.0003 21 19.0003 21 7.50029C20.9991 7.22174 20.9723 6.94388 20.92 6.67029C21.9406 5.66378 22.6608 4.393 23 3.00029Z" fill="white"/> </svg> </a> <a href="#" class="mx-3"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8386 5.15941C22.1792 5.51057 22.4212 5.94541 22.54 6.42C22.8572 8.1787 23.0112 9.96295 23 11.75C23.0063 13.5103 22.8523 15.2676 22.54 17C22.4212 17.4746 22.1792 17.9094 21.8386 18.2606C21.498 18.6118 21.0707 18.8668 20.6 19C18.88 19.46 12 19.46 12 19.46C12 19.46 5.11996 19.46 3.39996 19C2.93878 18.8738 2.51794 18.6308 2.17811 18.2945C1.83827 17.9581 1.59092 17.5398 1.45996 17.08C1.14273 15.3213 0.988741 13.537 0.999961 11.75C0.991197 9.97631 1.14518 8.20556 1.45996 6.46C1.57875 5.98541 1.82068 5.55057 2.16131 5.19941C2.50194 4.84824 2.92921 4.59318 3.39996 4.46C5.11996 4 12 4 12 4C12 4 18.88 4 20.6 4.42C21.0707 4.55318 21.498 4.80824 21.8386 5.15941ZM15.5 11.75L9.74997 15.02V8.47998L15.5 11.75Z" fill="white"/> </svg> </a> </div> <div class="d-flex align-items-center justify-content-center link-inherit mt-4 flex-wrap"> <a href="#">ポータブル電源</a> <span class="mx-3 border-left py-2"></span> <a href="#">モバイルバッテリー</a> <span class="mx-3 border-left py-2"></span> <a href="#">ソーラーパネル</a> <span class="mx-3 border-left py-2"></span> <a href="#">家電商品</a> <span class="mx-3 border-left py-2"></span> <a href="#">企業情報</a> <span class="mx-3 border-left py-2"></span> <a href="#">問い合わせ</a> </div> </div> </footer> <a href="https://www.bluetti.jp/pages/bluetti-eb70-funding" class="seasonalBanner" style="background-image:url(https://cdn.shopifycdn.net/s/files/1/0415/2072/6176/files/banner-1920X108.jpg?v=1606380568)" data-mobileBanner="https://cdn.shopifycdn.net/s/files/1/0415/2072/6176/files/banner-500x100.jpg?v=1607311858"><i class="close"></i></a> <a href="#totop"> <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" class="bi bi-chevron-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/> </svg> </a> 
+<script src="./assets/app.bundle.js"></script></body>
 </html>

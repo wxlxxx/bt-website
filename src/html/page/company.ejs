@@ -8,14 +8,14 @@
   <body data-page="company">
     <%= require('html-loader!../common/header2.ejs') %>
     <main>
-      <section style="background-image: url('<%= process.env.IMAGE_PATH %>/images/company/company-banner-bg.jpg');background-size: cover;">
+      <section style="background: url('<%= process.env.IMAGE_PATH %>/images/company/company-banner-bg.jpg') center no-repeat;">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 offset-lg-6">
-              <div class="d-flex align-items-center" style="height: 100vh;">
+              <div class="d-flex align-items-center vh-lg-100" style="max-height: 670px;min-height: 360px;">
                 <div class="text-white">
-                  <h1 class="text-huge mb-4">企業概要</h1>
-                  <p class="h3">分散型エネルギー貯蔵製品とマイクログリッド技術の研究と革新に専念し</p>
+                  <h1 class="text-huge mb-4">企業情報&nbsp;</h1>
+                  <p class="h3">ポータブル電源を極める道で日々精進して参ります。</p>
                 </div>
               </div>
             </div>
@@ -27,8 +27,8 @@
           <div class="row">
             <div class="col-lg-6 py-3 pr-lg-5">
               <h2 class="h1 mb-4 text-primary">会社概要</h2>
-              <p class="text-muted">徳蘭明海研究開発チームは2009年に設立されました。100人余りがいます。会社は発明特許、実用新案、ソフトウェア著作権などの累計100項目を持っています。研究開発の内容は、ネットワークから双方向インバータ、電池制御、光エネルギー/風力エネルギー制御、工控、遠隔制御などの関連ソフトウェアとハードウェアシステムを含み、全世界の家庭向けの輸出、小型商用に必要なフルセットのマイクログリッド方案に直面することができます。</p>
-              <p class="text-muted">徳蘭明海会社は知能化、自動化、情報化の製造システムを持ち、全面的に採用したMES情報化生産管理システムは、生産段階の高品質、高効率を確保し、製品のグローバル化を実現し、高品質の製品を輸出し、世界の需要を満足させる。会社はIS 0901品質/ISO 14001環境/ISO 45001職業健康安全/SA8000社会責任などの体系を通じて認証しました。製品はTTV-Mark（アジア初の企業）、VDE、PSE、KC、BIS、UL、JIS_を獲得しました。C 8714などの国際認証。</p>
+              <p class="text-muted">本社の研究開発チームは2009年に設立されました。100人ほどの研究員をもつチームとして、発明特許、実用新案、ソフトウェア著作権などの累計100＋の項目を持っています。ネットワークでの双方向インバータを含み、バッテリー制御システム、太陽光発電システム、風力発電システムなど関連ソフトウェアとハードウェアシステムを中心に、家庭向けのオフグリッド、小規模事業者に向けのマイクログリッドを提案いたします。</p>
+              <p class="text-muted">本社は知能化、自動化、情報化の製造システムを持ちます。また、MES情報化生産管理システムを採用することで、製品製造の高品質、高効率を確保します。国際認定について、本社は ISO 9001/ISO 14001/ISO 45001/SA8000などの認定を持ちます。製品はTTV-Mark（アジア初の企業）、VDE、PSE、KC、BIS、UL、JIS_C8714　などの認定を獲得しました。</p>
             </div>
             <div class="col-lg-6 py-3">
               <table class="table border h6">
@@ -37,20 +37,28 @@
                   <td>パワーオーク株式会社</td>
                 </tr>
                 <tr>
-                  <td class="bg-light">代表取締役社長</td>
+                  <td class="bg-light">CEO</td>
                   <td class="text-muted">川村 卓正</td>
                 </tr>
                 <tr>
-                  <td class="bg-light">代表取締役社長</td>
-                  <td class="text-muted">川村 卓正</td>
+                  <td class="bg-light">郵便番号</td>
+                  <td class="text-muted">〒252-0311</td>
                 </tr>
                 <tr>
-                  <td class="bg-light">代表取締役社長</td>
-                  <td class="text-muted">川村 卓正</td>
+                  <td class="bg-light">住所</td>
+                  <td class="text-muted">神奈川県相模原市南区東林間1丁目7−16</td>
                 </tr>
-                <tr>
-                  <td class="bg-light">代表取締役社長</td>
-                  <td class="text-muted">川村 卓正</td>
+                <tr style="display:none;">
+                  <td class="bg-light">TEL</td>
+                  <td class="text-muted">042−851−6996</td>
+                </tr>
+				<tr>
+                  <td class="bg-light">Email</td>
+                  <td class="text-muted">bluetti.jp@bluetti.com</td>
+                </tr>
+				<tr>
+                  <td class="bg-light">事業内容</td>
+                  <td class="text-muted">ポータブル電源の開発及び販売、ソーラーパネルなど太陽光発電の技術研究及び販売、及びフルセットのオフグリッド・ソリューションを提供いたします。</td>
                 </tr>
               </table>
             </div>
@@ -102,11 +110,11 @@
                   <div class="swiper-container gallery-top">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-thumbnal-1.jpg)"></div>
-                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-thumbnal-1.jpg)"></div>
-                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-thumbnal-1.jpg)"></div>
-                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-thumbnal-1.jpg)"></div>
-                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-thumbnal-1.jpg)"></div>
-                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-thumbnal-1.jpg)"></div>
+                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-2.jpg)"></div>
+                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-3.jpg)"></div>
+                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-4.jpg)"></div>
+                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-4.jpg)"></div>
+                      <div class="swiper-slide" style="background-image:url(<%= process.env.IMAGE_PATH %>/images/company/report-4.jpg)"></div>
                     </div>
                   </div>
                 </div>
@@ -127,10 +135,10 @@
               </div>
             </div>
             <div class="col-lg-6 py-3 pl-lg-5">
-              <div class="py-4 text-center text-primary mb-5" style="background-image: url('<%= process.env.IMAGE_PATH %>/images/home/logo-text.svg');background-size: contain;background-repeat: no-repeat;background-position: center;">
+              <div class="py-4 text-center text-primary" style="background-image: url('<%= process.env.IMAGE_PATH %>/images/home/logo-text.svg');background-size: contain;background-repeat: no-repeat;background-position: center;">
                 <h2 class="text-huge">マスコミ報道</h2>
               </div>
-              <p class="h6 text-muted">徳蘭明海会社は知能化、自動化、情報化の製造システムを持ち、全面的に採用したMES情報化生産管理システムは、生産段階の高品質、高効率を確保し、製品のグローバル化を実現し、高品質の製品を輸出し、世界の需要を満足させる。会社はIS 0901品質/ISO 14001環境/ISO 45001職業健康安全/SA8000社会責任などの体系を通じて認証しました。製品はTTV-Mark（アジア初の企業）、VDE、PSE、KC、BIS、UL、JIS_を獲得しました。C 8714などの国際認証。</p>
+              <p class="h6 text-muted"></p>
             </div>
           </div>
         </div>
@@ -139,37 +147,34 @@
         <div class="container py-lg-4">
           <div class="row">
             <div class="col-lg-4 py-3">
-              <div class="box-shadow">
-                <div class="overflow-hidden" style="height: 250px;">
+              <a href="" class="box-shadow">
+                <div class="overflow-hidden" style="height: 240px;">
                   <img src="<%= process.env.IMAGE_PATH %>/images/company/company-news-1.jpg" alt="">
                 </div>
-                <div class="bg-white p-4 d-flex justify-content-between align-items-center">
-                  <h4 class="text-primary">最新情報</h4>
-                  <a href="#" class="custom-link text-secondary mr-4 h6 mb-0">詳細を見る</a>
+                <div class="bg-white p-4 d-flex justify-content-center align-items-center">
+                  <h4>会社ニューズ</h4>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-lg-4 py-3">
-              <div class="box-shadow">
-                <div class="overflow-hidden" style="height: 250px;">
+              <a href="" class="box-shadow">
+                <div class="overflow-hidden" style="height: 240px;">
                   <img src="<%= process.env.IMAGE_PATH %>/images/company/company-news-2.jpg" alt="">
                 </div>
-                <div class="bg-white p-4 d-flex justify-content-between align-items-center">
-                  <h4 class="text-primary">最新情報</h4>
-                  <a href="#" class="custom-link text-secondary mr-4 h6 mb-0">詳細を見る</a>
+                <div class="bg-white p-4 d-flex justify-content-center align-items-center">
+                <h4>製品シリーズ</h4>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-lg-4 py-3">
-              <div class="box-shadow">
-                <div class="overflow-hidden" style="height: 250px;">
+              <a href="" class="box-shadow">
+                <div class="overflow-hidden" style="height: 240px;">
                   <img src="<%= process.env.IMAGE_PATH %>/images/company/company-news-3.jpg" alt="">
                 </div>
-                <div class="bg-white p-4 d-flex justify-content-between align-items-center">
-                  <h4 class="text-primary">最新情報</h4>
-                  <a href="#" class="custom-link text-secondary mr-4 h6 mb-0">詳細を見る</a>
+                <div class="bg-white p-4 d-flex justify-content-center align-items-center">
+                  <h4>お問い合わせ</h4>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>

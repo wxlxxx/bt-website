@@ -26,13 +26,16 @@
   margin-left: 30px;
 }
 
+#swiper1 {
+  .swiper-slide:not(.swiper-slide-active) {
+    opacity: 0 !important;
+  }
+}
+
 [data-page="home"] {
   .banner {
-    background-image: url('./images/bg.jpg');
-    background-size: cover;
-    background-position: center;
     height: 100vh;
-    max-height: 768px;
+    max-height: 600px;
     h1 {
       @media(min-width: 992px) {
         font-size: 80px;

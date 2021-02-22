@@ -9,9 +9,15 @@ const ip = require('ip')
 const { merge } = require('webpack-merge')
 const portFinderSync = require('portfinder-sync')
 // site config
+// server path config
+// const productionPublicPath = 'https://cdn.shopify.com/s/files/1/0415/2072/6176/t/11/'
+// const productionImagePath = '.'
 // test server path config
-const productionPublicPath = 'http://62.234.217.81/'
-const productionImagePath = 'http://62.234.217.81'
+// const productionPublicPath = 'http://62.234.217.81/'
+// const productionImagePath = 'http://62.234.217.81'
+// local path config
+const productionPublicPath = './'
+const productionImagePath = '.'
 
 function generateHtmlPlugins (templateDir) {
   // Read files in template directory
@@ -107,7 +113,7 @@ const devConfig = {
   },
   output: {
     filename: 'assets/[name].bundle.js',
-    chunkFilename: 'assets/async/[name].bundle.js',
+    chunkFilename: 'assets/[name].bundle.js',
     path: path.resolve(__dirname, './dist'),
     publicPath: '/'
   },
@@ -135,7 +141,7 @@ const devConfig = {
     ]),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
-      chunkFilename: 'assets/async/[name].css',
+      chunkFilename: 'assets/[name].css',
     }),
     new webpack.DefinePlugin({
       'process.env.IMAGE_PATH': JSON.stringify(''),
@@ -147,7 +153,7 @@ const devConfig = {
 const prodConfig = {
   output: {
     filename: 'assets/[name].bundle.js',
-    chunkFilename: 'assets/async/[name].bundle.js',
+    chunkFilename: 'assets/[name].bundle.js?v='+new Date().getTime(),
     path: path.resolve(__dirname, './dist'),
     publicPath: productionPublicPath,
   },
@@ -175,8 +181,8 @@ const prodConfig = {
       { from: path.resolve(__dirname, './public'), to: path.resolve(__dirname, './dist') }
     ]),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].css',
-      chunkFilename: 'assets/async/[name].css',
+      filename: 'assets/[name].css?v='+new Date().getTime(),
+      chunkFilename: 'assets/[name].css?v='+new Date().getTime(),
     }),
     new webpack.DefinePlugin({
       'process.env.IMAGE_PATH': JSON.stringify(productionImagePath),

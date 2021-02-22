@@ -30,7 +30,7 @@ const minus = quantity.querySelector('.minus')
 const add = quantity.querySelector('.add')
 minus.addEventListener('click', () => {
   let num = parseInt(quantity.querySelector('.num').value)
-  if(num > 0){
+  if(num > 1){
     num -= 1
     quantity.querySelector('.num').value = num
   }
@@ -39,4 +39,21 @@ add.addEventListener('click', () => {
   let num = parseInt(quantity.querySelector('.num').value)
   num += 1
   quantity.querySelector('.num').value = num
+})
+
+// list
+const productList = document.querySelector('.product-list')
+productList.addEventListener('click', (e) => {
+  if(e.target.classList.contains('showMore')){
+    e.preventDefault()
+    productList.classList.add('show-more')
+    e.target.style.display = 'none'
+    productList.querySelector('.showLess').style.display = 'block'
+  }
+  if(e.target.classList.contains('showLess')){
+    e.preventDefault()
+    productList.classList.remove('show-more')
+    e.target.style.display = 'none'
+    productList.querySelector('.showMore').style.display = 'block'
+  }
 })

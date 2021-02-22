@@ -44,9 +44,11 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "share-buttons": "^1.6.1",
     "siblings": "^1.0.1",
     "sweetalert2": "^10.5.1",
     "swiper": "^6.2.0",
+    "throttle-debounce": "^3.0.1",
     "webfontloader": "^1.6.28"
   }
 }
